@@ -1,38 +1,105 @@
 .App {
-  text-align: center;
+  color: #333;
+  overflow-x: hidden;
+  /* font-family: 'Montserrat', 'Noto Sans KR', sans-serif; */
+  font-family: 'Raleway', 'Noto Sans KR', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+  list-style: none;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+ }
+::-webkit-scrollbar {
+  display: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Raleway&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* 첫 메인화면 */
+.bg {
+  background-color: #fafaff;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: -1;
+  animation: rotateBg 3s forwards;
+}
+@keyframes rotateBg {
+  100% {
+    left: 0;
+    /* transform: rotateX(70deg); */
+    /* transform: rotateY(90deg) */
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Main {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  font-size: 54px;
+  font-weight: bold;
+  position: relative;
+  letter-spacing: 2px;
+}
+.Main .inner span {
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+.Main .inner {
+  opacity: 0;
+  animation: mainChar 3s forwards;
+}
+.Main .inner div:nth-child(2) {
+  font-size: 16px;
+}
+.Main .more {
+  opacity: 0;
+  position: absolute;
+  bottom: 5%;
+  font-size: 14px;
+  animation: mainChar 1s 1.5s forwards;
+  cursor: pointer;
+}
+@keyframes mainChar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.Main .more_img {
+  opacity: 0;
+  position: absolute;
+  bottom: 1%;
+  width: 20px;
+  animation: more 1s 2.5s infinite;
+  cursor: pointer;
+}
+.Main .more_img img {
+  width: 100%;
+}
+@keyframes more {
+  0% {
+    opacity: 1;
+    bottom: 1%;
+  }
+  50% {
+    opacity: 1;
+    bottom: 0.3%;
+  }
+  100% {
+    opacity: 1;
+    bottom: 1%;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Main2 {
+  height: 100vh;
 }

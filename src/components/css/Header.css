@@ -1,0 +1,25 @@
+.Header {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #ddd;
+}
+.Header h1 {
+    font-size: 26px;
+    cursor: pointer;
+}
+.Header ul {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.Header ul li {
+    margin-left: 20px;
+    cursor: pointer;
+}

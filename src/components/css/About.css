@@ -1,0 +1,12 @@
+.About {
+    height: 600px;
+    background-color: antiquewhite;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.About h2 {
+    text-align: center;
+    padding: 30px;
+    text-decoration: underline;
+}
