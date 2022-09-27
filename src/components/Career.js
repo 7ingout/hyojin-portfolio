@@ -33,7 +33,7 @@ const Career = () => {
                                     <div className='Career_description'>[스마트웹&콘텐츠개발] PWA 제작 프론트엔드 개발 디지털인재 양성과정</div>
                                     <ul className='Career_works'>
                                         <h4 className='Career_works_title'>화면 설계 / 구현</h4>
-                                        <li>html5와 css를 이용하여 웹사이트 화면의 틀과 UI를 설계 및 구현하는 능력을 향상</li>
+                                        <li>HTML5와 CSS를 이용하여 웹사이트 화면의 틀과 UI를 설계 및 구현하는 능력을 향상</li>
                                         <li>이용자의 기기에 따라 (PC / 모바일 / 태블릿 등) 화면의 구조를 변경할 수 있는 반응형 웹을 구현할 수 있는 능력을 터득</li>
                                         <li>스켈레톤 / 스피너 기능을 활용할 수 있음</li>
                                         <li>SCSS를 이용하여 UI 설계를 용이하게 할 수 있음</li>
@@ -56,14 +56,14 @@ const Career = () => {
                                         <li>쿠키와 세션 두 방법을 사용하여 로그인, 회원가입을 구현함</li>
                                     </ul>
                                     <ul className='Career_works'>
+                                        <h4 className='Career_works_title'>react-redux</h4>
+                                        <li>thunk 미들웨어를 사용하여 액션생성함수, 액션타입, 리듀서가 작성된 파일들을 하나로 관리할 수 있음</li>
+                                    </ul>
+                                    <ul className='Career_works'>
                                         <h4 className='Career_works_title'>node.js</h4>
                                         <li>bcrypt 해시 함수를 이용하여 웹페이지 사용자 비밀번호를 암호화해서 저장</li>
                                         <li>AWS MySQL과 Express(NodeJS 웹 애플리케이션 프레임워크) 연동 후 데이터 관리</li>
                                         <li>미들웨어 Cors를 통해 Cors 이슈를 해결</li>
-                                    </ul>
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>react-redux</h4>
-                                        <li>thunk 미들웨어를 사용하여 액션생성함수, 액션타입, 리듀서가 작성된 파일들을 하나로 관리할 수 있음</li>
                                     </ul>
                                     <ul className='Career_works'>
                                         <h4 className='Career_works_title'>php</h4>
