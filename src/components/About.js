@@ -124,7 +124,7 @@ const About = () => {
                                 </div>
                             </div>
                             <div className='cer'>
-                                <h1>- 보유 자격증 목록</h1>
+                                <h1>- 보유 자격증 목록 -</h1>
                                 <ul>
                                     <li>정보통신기사</li>
                                     <li>정보처리기사</li>
