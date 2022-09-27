@@ -1,3 +1,104 @@
+.Project_box {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.Project_box h2 {
+    text-align: center;
+    padding: 30px;
+    text-decoration: underline;
+}
+.Profects_Projects {
+  background-color: #1d809f;
+  margin-bottom: 80px;
+  border-radius: 25px;
+}
+.Projects_content {
+  width: 100%;
+  max-width:  1600px;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+}
 .Project {
-    height: 700px;
+  padding: 60px;
+  margin: 0 auto 2rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+  margin-bottom: 60px;
+}
+.Projects_title {
+  padding-bottom: 0.5rem;
+  font-family: Black Han Sans,sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #222;
+  text-align: center;
+}
+.Projects_period {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #6c757d;
+  text-align: center;
+  opacity: .8;
+}
+.Projects_info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.Projects_img {
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+  margin-right: 40px;
+}
+.Projects_descriptions {
+  width: calc(50% - 3rem);
+}
+.Projects_main_description {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.Projects_main_description ul li {
+  margin-bottom: 5px;
+}
+.Projects_show_btn {
+  display: table;
+  padding: 0.5rem 1rem;
+  background-color: #222;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+}
+.Projects_description {
+  margin-bottom: 1rem;
+}
+.Projects_label {
+  display: inline-block;
+  vertical-align: top;
+  width: 8.4rem;
+  font-weight: 900;
+  font-size: 1rem;
+}
+.Projects_label::before {
+  content: "✔";
+  display: inline;
+  padding-right: 0.5rem;
+}
+.Projects_value {
+  display: inline-block;
+  vertical-align: bottom;
+  width: calc(100% - 8.4rem);
+  font-weight: 400;
+  font-size: 1rem;
+}
+.value_url {
+  color: #258ddb;
+  cursor: pointer;
+  word-break: break-all;
 }

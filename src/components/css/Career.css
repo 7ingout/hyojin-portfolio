@@ -1,0 +1,90 @@
+.Career {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.Career h2 {
+    text-align: center;
+    padding: 30px;
+    text-decoration: underline;
+}
+
+.Career_Career {
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    margin-bottom: 80px;
+  }
+  .Career_content {
+    width: 100%;
+    max-width: 71.25rem;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+  }
+  .Career_companies {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .Career_company {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  .Career_logo_container {
+    padding-right: 3rem;
+    border-right: 1px solid #ccc;
+  }
+  .Career_logo_wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 15rem;
+    height: 15rem;
+    border: 1px solid #ccc;
+    border-radius: 10rem;
+    background-color: #fff;
+  }
+  .Career_logo_img {
+    display: block;
+    flex-shrink: 0;
+    width: 70%;
+  }
+  .Career_info {
+    padding-left: 3rem;
+  }
+  .Career_title {
+    padding-bottom: 0.5rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  .Career_period {
+    padding-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #6c757d;
+  }
+  .Career_description {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+  .Career_works {
+    padding-left: 1rem;
+    margin: 1rem 0;
+  }
+  .Career_works_title {
+    margin: 2rem 0 1rem -1rem;
+    font-size: 1rem;
+    color: #222;
+  }
+  .Career_works li {
+    margin-bottom: 0.5rem;
+  }
+  .Career_works li::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+  }
