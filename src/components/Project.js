@@ -93,6 +93,14 @@ const Project = () => {
                                                 <li>- heroku의 PaaS 클라우드 서비스를 이용하여 서버 배포</li>
                                                 <li>- AWS MySQL과 Express(NodeJS 웹 애플리케이션 프레임워크) 연동 후 데이터 관리</li>
                                                 <li>- 미들웨어 Cors를 통해 Cors 이슈를 해결</li>
+                                                <li>[라이브러리]</li>
+                                                <li>aos: 이미지 애니메이션</li>
+                                                <li>axios: 비동기 통신 기능</li>
+                                                <li>react-cookie: 로그인 기능</li>
+                                                <li>redux: 상태관리</li>
+                                                <li>react-daum-postcode: 다음 주소 API(회원가입)</li>
+                                                <li>react-simple-maps: 세계지도</li>
+                                                <li>swiper: 이미지 슬라이더</li>
                                             </ul>
                                             {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
                                         </div>
@@ -186,6 +194,13 @@ const Project = () => {
                                                 <li>- heroku라는 PaaS 클라우드 서비스를 이용하여 서버 배포</li>
                                                 <li>- AWS MySQL과 Express(NodeJS 웹 애플리케이션 프레임워크) 연동 후 데이터 관리</li>
                                                 <li>- 미들웨어 Cors를 통해 Cors 이슈를 해결</li>
+                                                <li>[라이브러리]</li>
+                                                <li>aos: 이미지 애니메이션</li>
+                                                <li>axios: 비동기 통신 기능</li>
+                                                <li>react-cookie: 로그인 기능</li>
+                                                <li>redux: 상태관리</li>
+                                                <li>react-daum-postcode: 다음 주소 API(회원가입)</li>
+                                                <li>react-fast-marquee: 글자 애니메이션</li>
                                             </ul>
                                             {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
                                         </div>
