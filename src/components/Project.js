@@ -101,6 +101,10 @@ const Project = () => {
                                                 <li>react-daum-postcode: 다음 주소 API(회원가입)</li>
                                                 <li>react-simple-maps: 세계지도</li>
                                                 <li>swiper: 이미지 슬라이더</li>
+                                                <li>bcrypt: 암호화 라이브러리</li>
+                                                <li>cors / express: 서버 구현</li>
+                                                <li>multer: 이미지 업로드 라이브러리</li>
+                                                <li>mysql: mySQL 연결 라이브러리</li>
                                             </ul>
                                             {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
                                         </div>
@@ -201,6 +205,9 @@ const Project = () => {
                                                 <li>redux: 상태관리</li>
                                                 <li>react-daum-postcode: 다음 주소 API(회원가입)</li>
                                                 <li>react-fast-marquee: 글자 애니메이션</li>
+                                                <li>cors / express: 서버 구현</li>
+                                                <li>multer: 이미지 업로드 라이브러리</li>
+                                                <li>mysql: mySQL 연결 라이브러리</li>
                                             </ul>
                                             {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
                                         </div>
