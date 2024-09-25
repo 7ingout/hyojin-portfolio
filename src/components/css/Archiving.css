@@ -17,7 +17,7 @@
 }
 
 .Archiving_Archiving {
-    background-color: #222;
+    background-color: #F5E8DD;
     border-radius: 25px;
   }
   .Archiving_content {
@@ -39,6 +39,7 @@
     background-color: #f5f5f5;
     cursor: pointer;
     transition: 0.5s;
+    box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
   }
   .Archiving_git-hub:hover {
     transform: translateY(5%);
@@ -53,6 +54,7 @@
     background-color: #f5f5f5;
     cursor: pointer;
     transition: 0.5s;
+    box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
   }
   .Archiving_tistory:hover {
     transform: translateY(5%);

@@ -108,6 +108,7 @@ const Project = () => {
                                             </ul>
                                             {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
                                         </div>
+                                        {/* <div style={red}>* AWS DB 삭제 관계로 사이트 에러가 발생합니다. *</div>
                                         <div className='Projects_description'>
                                             <div className='Projects_label'>URL</div>
                                             <div className='Projects_value'>
@@ -115,7 +116,7 @@ const Project = () => {
                                                     <div className='value_url'>walking-on-a-planet-client.vercel.app/</div>
                                                 </a>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div className='Projects_description'>
                                             <div className='Projects_label'>GitHub</div>
                                             <div className='Projects_value'>
@@ -211,7 +212,7 @@ const Project = () => {
                                             </ul>
                                             {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
                                         </div>
-                                        <div style={red}>* AWS DB 삭제 관계로 콘서트 정보가 뜨지 않습니다 *</div>
+                                        {/* <div style={red}>* AWS DB 삭제 관계로 콘서트 정보가 뜨지 않습니다 *</div>
                                         <div className='Projects_description'>
                                             <div className='Projects_label'>URL</div>
                                             <div className='Projects_value'>
@@ -219,7 +220,7 @@ const Project = () => {
                                                     <div className='value_url'>wannasee-project-client.vercel.app/</div>
                                                 </a>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div className='Projects_description'>
                                             <div className='Projects_label'>GitHub</div>
                                             <div className='Projects_value'>
@@ -349,14 +350,14 @@ const Project = () => {
                                             </ul>
                                             {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
                                         </div>
-                                        <div className='Projects_description'>
+                                        {/* <div className='Projects_description'>
                                             <div className='Projects_label'>URL</div>
                                             <div className='Projects_value'>
                                                 <a href='http://hyodev2.dothome.co.kr/jooda/index.php' target='_blank' rel='noreferrer'>
                                                     <div className='value_url'>hyodev2.dothome.co.kr/jooda/index.php</div>
                                                 </a>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div className='Projects_description'>
                                             <div className='Projects_label'>GitHub</div>
                                             <div className='Projects_value'>
@@ -418,14 +419,14 @@ const Project = () => {
                                             </ul>
                                             {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
                                         </div>
-                                        <div className='Projects_description'>
+                                        {/* <div className='Projects_description'>
                                             <div className='Projects_label'>URL</div>
                                             <div className='Projects_value'>
                                                 <a href='http://hyodev2.dothome.co.kr/baseballGame/' target='_blank' rel='noreferrer'>
                                                     <div className='value_url'>http://hyodev2.dothome.co.kr/baseballGame/</div>
                                                 </a>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div className='Projects_description'>
                                             <div className='Projects_label'>GitHub</div>
                                             <div className='Projects_value'>

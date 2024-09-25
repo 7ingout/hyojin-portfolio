@@ -1,7 +1,14 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 .Project_box {
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
+    font-family: Pretendard-regular;
 }
 .Project_box h2 {
     text-align: center;
@@ -9,7 +16,7 @@
     text-decoration: underline;
 }
 .Profects_Projects {
-  background-color: #1d809f;
+  background-color: #EED3D9;
   margin-bottom: 80px;
   border-radius: 25px;
 }
@@ -29,7 +36,6 @@
 }
 .Projects_title {
   padding-bottom: 0.5rem;
-  font-family: Black Han Sans,sans-serif;
   font-weight: 400;
   font-size: 2.5rem;
   color: #222;
@@ -63,6 +69,7 @@
   border-bottom: 1px solid #ccc;
   font-weight: 400;
   font-size: 1rem;
+  letter-spacing: 0.8px;
 }
 .Projects_main_description ul li {
   margin-bottom: 5px;
