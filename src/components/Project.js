@@ -31,6 +31,86 @@ const Project = () => {
                             </div>
                         </div> */}
                         <div className='Projects'>
+                        <div className='Project'>
+                                <div className='Projects_title'>한국물가협회 인재채용 페이지</div>
+                                <div className='Projects_period'>2022.07.04 - 2022.07.15 (개인 프로젝트)</div>
+                                <div className='Projects_info'>
+                                    <div className='Projects_img'>
+                                    <div className='Projects_imgs'>
+                                        <Swiper
+                                            slidesPerView={1}
+                                            spaceBetween={30}
+                                            slidesPerGroup={1}
+                                            loop={true}
+                                            loopFillGroupWithBlank={true}
+                                            pagination={{
+                                            clickable: true,
+                                            }}
+                                            navigation={true}
+                                            modules={[Pagination, Navigation, Autoplay]}
+                                            className="mySwiper"
+                                            autoplay={{delay: 5000}}>
+                                                <SwiperSlide>
+                                                        <img className='pic_img' src='images/recruit1.png' alt='' />
+                                                </SwiperSlide>    
+                                                <SwiperSlide>
+                                                        <img className='pic_img' src='images/recruit2.png' alt='' />
+                                                </SwiperSlide>  
+                                                <SwiperSlide>
+                                                        <img className='pic_img' src='images/recruit3.png' alt='' />
+                                                </SwiperSlide>  
+                                                <SwiperSlide>
+                                                        <img className='pic_img' src='images/recruit4.png' alt='' />
+                                                </SwiperSlide>  
+                                                <SwiperSlide>
+                                                        <img className='pic_img' src='images/recruit5.png' alt='' />
+                                                </SwiperSlide>  
+                                                <SwiperSlide>
+                                                        <img className='pic_img' src='images/recruit6.png' alt='' />
+                                                </SwiperSlide>  
+                                        </Swiper>
+                                        </div>
+                                    </div>
+                                    <div className='Projects_descriptions'>
+                                        <div className='Projects_main_description'>
+                                            <ul>
+                                                <li>한국물가협회 인재채용 페이지 제작</li>
+                                                <li>min-width:320px/ max-width:479px 모바일 기기에 맞춘 반응형 구현</li>
+                                                <li>- vercel 호스팅 사이트를 이용하여 사이트 배포</li>
+                                                <li>- 콘서트 예매 수량 관리</li>
+                                                <li>- 콘서트 상세보기</li>
+                                                <li>- 콘서트 등록 및 수정</li>
+                                                <li>- 로그인 / 회원가입 및 관리자모드 구현</li>
+                                                <li>- 티켓 예매내역</li>
+                                                <li>[라이브러리]</li>
+                                                <li>aos: 이미지 애니메이션</li>
+                                            </ul>
+                                            {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
+                                        </div>
+                                        {/* <div style={red}>* AWS DB 삭제 관계로 콘서트 정보가 뜨지 않습니다 *</div>
+                                        <div className='Projects_description'>
+                                            <div className='Projects_label'>URL</div>
+                                            <div className='Projects_value'>
+                                                <a href='https://wannasee-project-client.vercel.app/' target='_blank' rel='noreferrer'>
+                                                    <div className='value_url'>wannasee-project-client.vercel.app/</div>
+                                                </a>
+                                            </div>
+                                        </div> */}
+                                        <div className='Projects_description'>
+                                            <div className='Projects_label'>URL</div>
+                                            <div className='Projects_value'>
+                                                <a href='https://www.kprc.or.kr/intro.do?modeType=recruit' target='_blank' rel='noreferrer'>
+                                                    <div className='value_url'>https://www.kprc.or.kr/intro.do?modeType=recruit</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div className='Projects_description'>
+                                            <div className='Projects_label'>Tech Stack</div>
+                                            <div className='Projects_value'>JSP / JavaScript / CSS</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div className='Project'>
                                 <div className='Projects_title'>Walking On a Planet</div>
                                 <div className='Projects_period'>2022.07.25 - 2022.08.12 (개인 프로젝트)</div>
