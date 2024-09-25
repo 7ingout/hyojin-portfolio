@@ -1,9 +1,16 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 .About {
     /* height: 600px; */
     /* background-color: antiquewhite; */
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
+    font-family: Pretendard-regular;
 }
 .About h2 {
     text-align: center;
@@ -20,17 +27,20 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background: linear-gradient(180deg,rgba(235, 238, 246, 0.8) 0,rgba(232, 232, 232, 0.8)  90%),url(/public/images/bg.jpg) 50% no-repeat;
+    /* background: linear-gradient(180deg,rgba(235, 238, 246, 0.8) 0,rgba(232, 232, 232, 0.8)  90%),url(/public/images/bg.jpg) 50% no-repeat; */
     background-size: cover;
-    background-color: #f7f7ff;
+    /* background-color: #f7f7ff; */
     z-index: -1;
   }
   .Masthead_content {
     width: 100%;
     max-width: 71.25rem;
     margin: 0 auto;
-    padding: calc(30px + 30px) 2rem 1rem;
+    padding: 20px;
     text-align: center;
+  }
+  .Masthead_content img {
+    width: 200px;
   }
   .Masthead_title {
     font-family: Black Han Sans,sans-serif;
@@ -43,12 +53,16 @@
     /* background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%); */
     font-weight: bold;
   }
+  .Masthead_title div {
+    margin-top: 10px;
+    font-size: 40px;
+  }
   .Masthead_divider {
     width: 3.25rem;
     height: 0;
     margin: 1.5rem auto;
     border: none;
-    border-top: 0.2rem solid royalblue;
+    border-top: 0.2rem solid burlywood;
     opacity: 1;
   }
   .Masthead_description {
@@ -76,7 +90,7 @@
   .AboutMe_content {
     width: 100%;
     max-width: 71.25rem;
-    padding: 40px;
+    padding: 5px 40px 40px 40px;
     margin: 0 auto;
   }
   .SectionTitle {
@@ -118,8 +132,8 @@
   }
   .AboutMe_basic_info {
     width: 33.3333%;
-    margin-bottom: 2rem;
-    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
   .AboutMe_basic_info_li {
     display: flex;
@@ -127,7 +141,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
-    max-width: 14rem;
+    max-width: 280px;
     margin: 0 auto;
     opacity: 0.8;
   }
@@ -148,9 +162,8 @@
   }
   .AboutMe_field_value {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 18px;
   }
-
   #skell {
     animation: skellskell 3s forwards;
     scale: 0;
@@ -165,10 +178,10 @@
 
   .cer {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 45px;
   }
   .cer ul {
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .cer ul li {
     margin: 10px 0;

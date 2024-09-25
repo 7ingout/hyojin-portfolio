@@ -1,51 +1,54 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 .Skill {
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
+    font-family: Pretendard-regular;
 }
 .Skill h2 {
     text-align: center;
     padding: 30px;
     text-decoration: underline;
 }
-
 .Skills_Skills {
     /* background-color: #f9c51d; */
-    background-color: #e5a228;
+    background-color: burlywood;
     border-radius: 25px;
   }
   .Skills_content {
     width: 100%;
-    max-width: 71.25rem;
+    max-width: 1200px;
     padding: 60px;
     margin: 0 auto;
-    height: 600px;
+    height: 500px;
   }
   .Skills_tech_stacks_container {
     display: flex;
-    flex-flow: column wrap;
-    align-content: space-around;
-    height: calc(100% - (10rem + 1px));
+    justify-content: center;
   }
   .Skills_tech_stacks {
     box-sizing: border-box;
     flex-shrink: 0;
-    width: 17rem;
+    width: 220px;
     padding: 30px;
-    /* margin: 0 auto 2rem; */
     margin: 0 20px;
     border-radius: 1rem;
     background-color: #fff;
-    box-shadow: 1rem 1rem 1rem 0rgba(68,68,68,.2);
-  
+    box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2);
   }
   .Skills_title {
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
     border-bottom: 1px solid #ccc;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 22px;
     color: #f4623a;
+    text-align: center;
   }
   .Skills_img {
     display: block;

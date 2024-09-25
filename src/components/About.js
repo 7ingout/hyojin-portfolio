@@ -12,18 +12,14 @@ const About = () => {
                 <div className='About_inner'>
                     <div className='Masthead'>
                         <div className='Masthead_content'>
+                            <img src="/images/profile.png" alt=''/>
                             <div className='Masthead_title'>
-                                <span>김효진</span>
-                                <br/>
-                                웹 개발자 포트폴리오
+                                <span>김효진(Hyojin Kim)</span>
+                                <div>Web 개발자 포트폴리오</div>
                             </div>
                             <div className='Masthead_divider'></div>
                             <div className='Masthead_description'>
-                                안녕하세요
-                                <br/>
-                                프론트엔드 개발을 사랑하는
-                                <br/>
-                                풀스택이 목표인 개발자입니다.
+                                세심한 디테일로 차별화된 웹 경험을 창조합니다.
                             </div>
                         </div>
                     </div>
@@ -55,7 +51,7 @@ const About = () => {
                                                 생년월일
                                             </div>
                                             <div className='AboutMe_field_value'>
-                                                98.01.15
+                                                1998.01.15
                                             </div>
                                         </div>
                                     </div>
@@ -70,7 +66,7 @@ const About = () => {
                                                 주소지
                                             </div>
                                             <div className='AboutMe_field_value'>
-                                                서울특별시 금천구
+                                                대한민국 서울특별시 금천구
                                             </div>
                                         </div>
                                     </div>
@@ -115,9 +111,7 @@ const About = () => {
                                                 학력
                                             </div>
                                             <div className='AboutMe_field_value'>
-                                                영남대학교
-                                                <br/>
-                                                (정보통신공학과)
+                                                영남대학교 정보통신공학과
                                             </div>
                                         </div>
                                     </div>

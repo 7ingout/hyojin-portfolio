@@ -27,12 +27,21 @@ const Skills = () => {
                                 <img className='Skills_img' src='images/backendimg.png' alt=''/>
                             </div>
                             <div className='Skills_tech_stacks'>
+                                <div className='Skills_title'>Database</div>
+                                <img className='Skills_img' src='images/database.png' alt=''/>
+                            </div>
+                            <div className='Skills_tech_stacks'>
                                 <div className='Skills_title'>Deployment</div>
                                 <img className='Skills_img' src='images/deploymentimg.png' alt=''/>
                             </div>
                             <div className='Skills_tech_stacks'>
                                 <div className='Skills_title'>Version Control</div>
                                 <img className='Skills_img' src='images/version-controlimg.png' alt=''/>
+                            </div>
+
+                            <div className='Skills_tech_stacks'>
+                                <div className='Skills_title'>ETC</div>
+                                <img className='Skills_img' src='images/etc.png' alt=''/>
                             </div>
                             {/* <div className='Skills_tech_stacks'>
                                 <div className='Skills_title'>Certificate</div>

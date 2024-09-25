@@ -1,7 +1,14 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 .Archiving {
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
+    font-family: Pretendard-regular;
 }
 .Archiving h2 {
     text-align: center;
@@ -18,7 +25,7 @@
     max-width: 71.25rem;
     padding: 60px;
     margin: 0 auto;
-    margin-bottom: 220px;
+    margin-bottom: 186px;
   }
   .Archiving_container {
     display: flex;
@@ -69,7 +76,7 @@
     color: #444;
   }
   .Archiving_description ul {
-    padding-left: 1rem;
+    padding-left: 5px;
     margin: 0;
   }
   .Archiving_description ul li {
