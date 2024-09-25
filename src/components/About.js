@@ -70,7 +70,7 @@ const About = () => {
                                                 주소지
                                             </div>
                                             <div className='AboutMe_field_value'>
-                                                서울특별시 영등포구
+                                                서울특별시 금천구
                                             </div>
                                         </div>
                                     </div>
@@ -132,8 +132,6 @@ const About = () => {
                                     <li>컴퓨터활용능력 1급</li>
                                     <li>한국사능력검정시험 1급</li>
                                     <li>KBS한국어능력시험 3+급</li>
-                                    <li>웹디자인기능사 - 필기합격</li>
-                                    <li>컴퓨터그래픽운용기능사 - 필기합격</li>
                                 </ul>
                             </div>
                         </div>
