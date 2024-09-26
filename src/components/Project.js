@@ -74,7 +74,7 @@ const Project = () => {
                                     <div className='Projects_descriptions'>
                                         <div className='Projects_main_description'>
                                             <ul>
-                                                <li>한국물가협회 인재채용 페이지 제작</li>
+                                                <li><strong>한국물가협회 인재채용 페이지 제작</strong></li>
                                                 <li>min-width:320px/ max-width:479px 모바일 기기에 맞춘 반응형 구현</li>
                                                 <li>- vercel 호스팅 사이트를 이용하여 사이트 배포</li>
                                                 <li>- 콘서트 예매 수량 관리</li>
@@ -157,7 +157,7 @@ const Project = () => {
                                     <div className='Projects_descriptions'>
                                         <div className='Projects_main_description'>
                                             <ul>
-                                                <li>여행지 추천, 여행 물품 중고거래, 여행 사진 공모전 등 다양한 콘텐츠를 담고있는 여행사이트 구현</li>
+                                                <li><strong>여행지 추천, 여행 물품 중고거래, 여행 사진 공모전 등 다양한 콘텐츠를 담고있는 여행사이트 구현</strong></li>
                                                 <li>min-width:320px/ max-width:479px 모바일 기기에 맞춘 반응형 구현</li>
                                                 <li>[클라이언트]</li>
                                                 <li>- vercel 호스팅 사이트를 이용하여 사이트 배포</li>
@@ -266,7 +266,7 @@ const Project = () => {
                                     <div className='Projects_descriptions'>
                                         <div className='Projects_main_description'>
                                             <ul>
-                                                <li>콘서트 정보 안내 및 티켓 예매를 할 수 있는 웹사이트(WANNASEE) 구현</li>
+                                                <li><strong>콘서트 정보 안내 및 티켓 예매를 할 수 있는 웹사이트(WANNASEE) 구현</strong></li>
                                                 <li>min-width:320px/ max-width:479px 모바일 기기에 맞춘 반응형 구현</li>
                                                 <li>[클라이언트]</li>
                                                 <li>- vercel 호스팅 사이트를 이용하여 사이트 배포</li>
@@ -355,7 +355,7 @@ const Project = () => {
                                     <div className='Projects_descriptions'>
                                         <div className='Projects_main_description'>
                                             <ul>
-                                                <li>canvas를 활용한 손가락 DDR 게임 구현</li>
+                                                <li><strong>canvas를 활용한 손가락 DDR 게임 구현</strong></li>
                                                 <li>timer 변수를 선언하여 normal / hard / extreme 세가지 난이도로 구현</li>
                                                 <li>랜덤함수를 이용하여 무작위로 올라오는 화살표 구현</li>
                                                 <li>PHP를 활용하여 홈 화면 / 난이도에 따른 3가지 게임 화면으로 세분화</li>
@@ -420,7 +420,7 @@ const Project = () => {
                                     <div className='Projects_descriptions'>
                                         <div className='Projects_main_description'>
                                             <ul>
-                                                <li>기프트샵 웹사이트(JOODA) 구현</li>
+                                                <li><strong>기프트샵 웹사이트(JOODA) 구현</strong></li>
                                                 <li>로그인 / 회원가입 및 관리자 모드 구현</li>
                                                 <li>기프트 상품 상세보기</li>
                                                 <li>기프트 상품 등록 및 수정, 삭제</li>
@@ -458,7 +458,7 @@ const Project = () => {
                                 </div>
                             </div>
                             <div className='Project'>
-                                <div className='Projects_title'>BaseballGame</div>
+                                <div className='Projects_title'>Baseball Game</div>
                                 <div className='Projects_period'>2022.05.16 - 2022.05.20 (3인 팀프로젝트)</div>
                                 <div className='Projects_info'>
                                     <div className='Projects_img'>
@@ -494,7 +494,7 @@ const Project = () => {
                                     <div className='Projects_descriptions'>
                                         <div className='Projects_main_description'>
                                             <ul>
-                                                <li>바닐라 스크립트로 게임 구현</li>
+                                                <li><strong>바닐라 스크립트로 야구 게임 구현</strong></li>
                                                 <li>랜덤함수를 이용하여 확률에 따라 다른 안타 / 홈런 / 아웃 등의 비율을 실제 경기처럼 구현</li>
                                             </ul>
                                             {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
