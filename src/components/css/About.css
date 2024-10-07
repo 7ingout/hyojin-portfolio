@@ -27,14 +27,12 @@
     right: 0;
     left: 0;
     bottom: 0;
-    /* background: linear-gradient(180deg,rgba(235, 238, 246, 0.8) 0,rgba(232, 232, 232, 0.8)  90%),url(/public/images/bg.jpg) 50% no-repeat; */
     background-size: cover;
-    /* background-color: #f7f7ff; */
     z-index: -1;
   }
   .Masthead_content {
     width: 100%;
-    max-width: 71.25rem;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -58,70 +56,24 @@
     font-size: 40px;
   }
   .Masthead_divider {
-    width: 3.25rem;
+    width: 60px;
     height: 0;
-    margin: 1.5rem auto;
+    margin: 25px auto;
     border: none;
-    border-top: 0.2rem solid burlywood;
+    border-top: 3px solid burlywood;
     opacity: 1;
   }
   .Masthead_description {
-    margin: 0 auto 2rem;
+    margin: 0 auto 20px;
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 22px;
     line-height: 1.5;
-  }
-  .Masthead_findmore {
-    display: inline-block;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 10rem;
-    background-color: #f4623a;
-    font-weight: 400;
-    font-size: 1rem;
-    text-decoration: none;
-    line-height: 1.5;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  .Masthead_findmore:hover {
-    background-color: #fa410e;
   }
   .AboutMe_content {
     width: 100%;
-    max-width: 71.25rem;
+    max-width: 1200px;
     padding: 5px 40px 40px 40px;
     margin: 0 auto;
-  }
-  .SectionTitle {
-    display: table;
-    position: relative;
-    margin: 0 auto 3rem;
-  }
-  .SectionTitle_text {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    font-family: Black Han Sans,sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 1.5;
-    color: #000000;
-    border-bottom-color: #cccccc;
-  }
-  .SectionTitle_link {
-    position: absolute;
-    top: 50%;
-    left: -3rem;
-    transform: translateY(-50%);
-    width: 2rem;
-    height: 2rem;
-    opacity: .5;
-    cursor: pointer;
-  }
-  .SectionTitle_link_img {
-    width: 100%;
-    /* vertical-align: middle; */
   }
   .AboutMe_basic_infos {
     display: flex;
@@ -146,39 +98,27 @@
     opacity: 0.8;
   }
   .AboutMe_icon_img {
-    width: 2rem;
-    min-width: 2rem;
-    height: 2rem;
-    margin-top: 0.2rem;
-    margin-right: 2rem;
+    width: 35px;
+    min-width: 35px;
+    margin-top: 10px;
+    margin-right: 40px;
   }
   .AboutMe_icon_img2 {
     width: 100%;
   }
   .AboutMe_field_label {
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 20px;
   }
   .AboutMe_field_value {
     font-weight: 400;
     font-size: 18px;
   }
-  #skell {
-    animation: skellskell 3s forwards;
-    scale: 0;
-    opacity: 0;
-  }
-  @keyframes skellskell {
-    100% {
-      scale: 1;
-      opacity: 1;
-    }
-  }
-
   .cer {
     text-align: center;
     margin-top: 45px;
+    font-size: 18px;
   }
   .cer ul {
     margin-top: 20px;

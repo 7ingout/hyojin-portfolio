@@ -22,6 +22,7 @@ const Project = () => {
             <Header />
             <div className='Project_box'>
                 <h2>PROJECTS</h2> 
+                <div>모든 프로젝트의 디자인은 제가 맡아 진행하였습니다.</div>
                 <article className='Profects_Projects'>
                     <div className='Projects_content'>
                         {/* <div className='SectionTitle'>
@@ -76,26 +77,12 @@ const Project = () => {
                                             <ul>
                                                 <li><strong>한국물가협회 인재채용 페이지 제작</strong></li>
                                                 <li>min-width:320px/ max-width:479px 모바일 기기에 맞춘 반응형 구현</li>
-                                                <li>- vercel 호스팅 사이트를 이용하여 사이트 배포</li>
-                                                <li>- 콘서트 예매 수량 관리</li>
-                                                <li>- 콘서트 상세보기</li>
-                                                <li>- 콘서트 등록 및 수정</li>
-                                                <li>- 로그인 / 회원가입 및 관리자모드 구현</li>
-                                                <li>- 티켓 예매내역</li>
+                                                <li>- </li>
                                                 <li>[라이브러리]</li>
                                                 <li>aos: 이미지 애니메이션</li>
                                             </ul>
                                             {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
                                         </div>
-                                        {/* <div style={red}>* AWS DB 삭제 관계로 콘서트 정보가 뜨지 않습니다 *</div>
-                                        <div className='Projects_description'>
-                                            <div className='Projects_label'>URL</div>
-                                            <div className='Projects_value'>
-                                                <a href='https://wannasee-project-client.vercel.app/' target='_blank' rel='noreferrer'>
-                                                    <div className='value_url'>wannasee-project-client.vercel.app/</div>
-                                                </a>
-                                            </div>
-                                        </div> */}
                                         <div className='Projects_description'>
                                             <div className='Projects_label'>URL</div>
                                             <div className='Projects_value'>

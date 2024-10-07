@@ -16,7 +16,6 @@ const Main = () => {
                     클릭하여 더 알아보기
                 </Link>
             </div>
-            {/* <div className='more_img' onClick={goDown}><img src='/arrow.png' alt='arrow'/></div> */}
         </div>
     );
 };

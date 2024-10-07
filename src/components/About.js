@@ -18,9 +18,7 @@ const About = () => {
                                 <div>Web 개발자 포트폴리오</div>
                             </div>
                             <div className='Masthead_divider'></div>
-                            <div className='Masthead_description'>
-                                세심한 디테일로 차별화된 웹 경험을 창조합니다.
-                            </div>
+                            <div className='Masthead_description'>심플함과 효율성으로 차별화된 웹 경험을 창조합니다.</div>
                         </div>
                     </div>
                     <article className='AboutMe'>
