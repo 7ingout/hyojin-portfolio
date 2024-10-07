@@ -83,7 +83,7 @@ const Career = () => {
                     </div>
                 </article>
             </div>
-            {/* <div id="Arrimg" onClick={go_up}><img src='/images/arrow.png' alt="arrow_pic" /></div> */}
+             <div id="Arrimg" onClick={go_up}><img src='/images/arrow.png' alt="arrow_pic" /></div> 
             <Footer />
         </div>
     );

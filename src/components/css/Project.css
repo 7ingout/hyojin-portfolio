@@ -73,6 +73,9 @@
 .Projects_descriptions {
   width: calc(50% - 3rem);
 }
+.Projects_imgs img {
+  width: 100%;
+}
 .Projects_main_description {
   padding-bottom: 1rem;
   margin-bottom: 1rem;

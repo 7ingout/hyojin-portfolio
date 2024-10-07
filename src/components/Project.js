@@ -9,20 +9,20 @@ import { Navigation, Pagination, Autoplay } from "swiper";
 import Footer from './Footer';
 
 const Project = () => {
-    function go_up() {
-        window.scrollTo(0,0);
+     function go_up() {
+         window.scrollTo(0,0);
     }
-    const red = {
-        color: "red",
-        fontSize:"12px",
-        fontWeight:"bold"
-    }
+    // const red = {
+    //     color: "red",
+    //     fontSize:"12px",
+    //     fontWeight:"bold"
+    // }
     return (
         <div>
             <Header />
             <div className='Project_box'>
                 <h2>PROJECTS</h2> 
-                <div>모든 프로젝트의 디자인은 제가 맡아 진행하였습니다.</div>
+                <div>한국물가협회 LOCAL CONTENTS 프로젝트 제외 모든 디자인은 제가 맡아 진행하였습니다.</div>
                 <article className='Profects_Projects'>
                     <div className='Projects_content'>
                         {/* <div className='SectionTitle'>
@@ -32,6 +32,70 @@ const Project = () => {
                             </div>
                         </div> */}
                         <div className='Projects'>
+                        <div className='Project'>
+                            <div className='Projects_title'>한국물가협회 LOCAL CONTENTS</div>
+                            <div className='Projects_period'>2022.07.04 - 2022.07.15 (2인 프로젝트)</div>
+                            <div className='Projects_info'>
+                                <div className='Projects_img'>
+                                <div className='Projects_imgs'>
+                                    <Swiper
+                                        slidesPerView={1}
+                                        spaceBetween={30}
+                                        slidesPerGroup={1}
+                                        loop={true}
+                                        loopFillGroupWithBlank={true}
+                                        pagination={{
+                                        clickable: true,
+                                        }}
+                                        navigation={true}
+                                        modules={[Pagination, Navigation, Autoplay]}
+                                        className="mySwiper"
+                                        autoplay={{delay: 5000}}>
+                                            <SwiperSlide>
+                                                    <img className='pic_img' src='images/LC1.png' alt='' />
+                                            </SwiperSlide>    
+                                            <SwiperSlide>
+                                                    <img className='pic_img' src='images/LC2.png' alt='' />
+                                            </SwiperSlide>  
+                                            <SwiperSlide>
+                                                    <img className='pic_img' src='images/LC3.png' alt='' />
+                                            </SwiperSlide>  
+                                            <SwiperSlide>
+                                                    <img className='pic_img' src='images/LC4.png' alt='' />
+                                            </SwiperSlide>  
+                                            <SwiperSlide>
+                                                    <img className='pic_img' src='images/LC5.png' alt='' />
+                                            </SwiperSlide>    
+                                    </Swiper>
+                                    </div>
+                                </div>
+                                <div className='Projects_descriptions'>
+                                    <div className='Projects_main_description'>
+                                        <ul>
+                                            <li><strong>한국물가협회 지회 웹페이지 "메인화면" & "주요 지역산업" 제작</strong></li>
+                                            <li>min-width:320px/ max-width:479px 모바일 기기에 맞춘 반응형 구현</li>
+                                            <li>- 요청자의 요구에 부합하는 지회 페이지</li>
+                                            <li>- 프론트엔드와 백엔드(팀원)로 나누어 개발</li>
+                                            <li>[라이브러리]</li>
+                                            <li>aos: 텍스트 애니메이션</li>
+                                        </ul>
+                                        {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
+                                    </div>
+                                    <div className='Projects_description'>
+                                        <div className='Projects_label'>URL</div>
+                                        <div className='Projects_value'>
+                                            <a href='https://www.kprc.or.kr/branchInfo.do?modeType=MainPage' target='_blank' rel='noreferrer'>
+                                                <div className='value_url'>https://www.kprc.or.kr/branchInfo.do?modeType=MainPage</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className='Projects_description'>
+                                        <div className='Projects_label'>Tech Stack</div>
+                                        <div className='Projects_value'>JSP / JavaScript / Java / CSS</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div className='Project'>
                                 <div className='Projects_title'>한국물가협회 인재채용 페이지</div>
                                 <div className='Projects_period'>2022.07.04 - 2022.07.15 (개인 프로젝트)</div>
@@ -77,7 +141,7 @@ const Project = () => {
                                             <ul>
                                                 <li><strong>한국물가협회 인재채용 페이지 제작</strong></li>
                                                 <li>min-width:320px/ max-width:479px 모바일 기기에 맞춘 반응형 구현</li>
-                                                <li>- </li>
+                                                <li>- 요청자의 요구에 부합하는 인재채용 페이지</li>
                                                 <li>[라이브러리]</li>
                                                 <li>aos: 이미지 애니메이션</li>
                                             </ul>
@@ -513,7 +577,7 @@ const Project = () => {
                     </div>
                 </article>
             </div>
-            {/* <div id="Arrimg" onClick={go_up}><img src='/images/arrow.png' alt="arrow_pic" /></div> */}
+            <div id="Arrimg" onClick={go_up}><img src='/images/arrow.png' alt="arrow_pic" /></div> 
             <Footer />
         </div>
     );
