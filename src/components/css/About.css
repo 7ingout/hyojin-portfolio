@@ -5,8 +5,6 @@
   font-style: normal;
 }
 .About {
-    /* height: 600px; */
-    /* background-color: antiquewhite; */
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
@@ -14,48 +12,33 @@
 }
 .About h2 {
     text-align: center;
-    padding: 30px;
+    padding: 60px;
     text-decoration: underline;
 }
-.Masthead {
-    position: relative;
-  }
-  .Masthead::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-size: cover;
-    z-index: -1;
-  }
-  .Masthead_content {
+  .Masthead {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
   }
-  .Masthead_content img {
+  .Masthead img {
     width: 200px;
   }
-  .Masthead_title {
-    font-family: Black Han Sans,sans-serif;
+  .MastheadTitle {
     font-weight: 400;
     font-size: 46px;
     word-break: keep-all;
     
   }
-  .Masthead_title span {
-    /* background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%); */
+  .MastheadTitle span {
     font-weight: bold;
   }
-  .Masthead_title div {
+  .MastheadTitle div {
     margin-top: 10px;
     font-size: 40px;
   }
-  .Masthead_divider {
+  .MastheadDivider {
     width: 60px;
     height: 0;
     margin: 25px auto;
@@ -63,33 +46,31 @@
     border-top: 3px solid burlywood;
     opacity: 1;
   }
-  .Masthead_description {
+  .MastheadDescription {
     margin: 0 auto 20px;
     font-weight: 400;
     font-size: 22px;
     line-height: 1.5;
   }
-  .AboutMe_content {
+  .AboutMeContent {
     width: 100%;
     max-width: 1200px;
     padding: 5px 40px 40px 40px;
     margin: 0 auto;
   }
-  .AboutMe_basic_infos {
+  .AboutMeInfos {
     display: flex;
-    /* flex-wrap: row wrap; */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .AboutMe_basic_info {
+  .AboutMeInfo {
     width: 33.3333%;
     margin-bottom: 20px;
     margin-top: 20px;
   }
-  .AboutMe_basic_info_li {
+  .AboutMeInfoLi {
     display: flex;
-    /* flex-wrap: row nowrap; */
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;

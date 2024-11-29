@@ -22,19 +22,132 @@ const Project = () => {
             <Header />
             <div className='Project_box'>
                 <h2>PROJECTS</h2> 
-                <div>한국물가협회 LOCAL CONTENTS 프로젝트 제외 모든 디자인은 제가 맡아 진행하였습니다.</div>
+                <div>한국물가협회 LOCAL CONTENTS 프로젝트 제외, 모든 디자인은 제가 맡아 진행하였습니다.</div>
                 <article className='Profects_Projects'>
                     <div className='Projects_content'>
-                        {/* <div className='SectionTitle'>
-                            <div className='SectionTitle_text' Style="color:#ffffff;border-bottom-color:#cccccc">PROJECTS</div>
-                            <div className='SectionTitle_link'>
-                                <img className='SectionTitle_link_img' src="/images/white-link.png" alt=''/>
+                    <div className='Project'>
+                            <div className='Projects_title'>한국물가협회 단체급식 식재료 시장조사</div>
+                            <div className='Projects_period'>2024.08.02 - 2024.08.27 (개인 프로젝트)</div>
+                            <div className='Projects_info'>
+                                <div className='Projects_img'>
+                                <div className='Projects_imgs'>
+                                    <Swiper
+                                        slidesPerView={1}
+                                        spaceBetween={30}
+                                        slidesPerGroup={1}
+                                        loop={true}
+                                        loopFillGroupWithBlank={true}
+                                        pagination={{
+                                        clickable: true,
+                                        }}
+                                        navigation={true}
+                                        modules={[Pagination, Navigation, Autoplay]}
+                                        className="mySwiper"
+                                        autoplay={{delay: 5000}}>
+                                            <SwiperSlide>
+                                                    <img className='pic_img' src='images/fs1.png' alt='' />
+                                            </SwiperSlide>    
+                                            <SwiperSlide>
+                                                    <img className='pic_img' src='images/fs2.png' alt='' />
+                                            </SwiperSlide>  
+                                            <SwiperSlide>
+                                                    <img className='pic_img' src='images/fs3.png' alt='' />
+                                            </SwiperSlide>  
+                                            <SwiperSlide>
+                                                    <img className='pic_img' src='images/fs4.png' alt='' />
+                                            </SwiperSlide>    
+                                    </Swiper>
+                                    </div>
+                                </div>
+                                <div className='Projects_descriptions'>
+                                    <div className='Projects_main_description'>
+                                        <ul>
+                                            <li><strong>한국물가협회 단체급식 식재료 시장조사</strong></li>
+                                            <li>단체급식산업 전반에 걸쳐 사용되는 식재료에 대한 거래실례가격 조사 페이지</li>
+                                            <li>- 내부 고객의 요구에 부합하는 기획 페이지</li>
+                                            <li>- 사업소개/사업실적/조사문의 섹션 개발</li>
+                                        </ul>
+                                        {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
+                                    </div>
+                                    <div className='Projects_description'>
+                                        <div className='Projects_label'>URL</div>
+                                        <div className='Projects_value'>
+                                            <a href='https://www.kprc.or.kr/foodService.do?modeType=foodServiceMain' target='_blank' rel='noreferrer'>
+                                                <div className='value_url'>https://www.kprc.or.kr/foodService.do?modeType=foodServiceMain</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className='Projects_description'>
+                                        <div className='Projects_label'>Tech Stack</div>
+                                        <div className='Projects_value'>JSP / JavaScript / Java / CSS</div>
+                                    </div>
+                                </div>
                             </div>
-                        </div> */}
-                        <div className='Projects'>
+                        </div>
+                        <div className='Project'>
+                            <div className='Projects_title'>한국물가협회 생활물가 기획조사</div>
+                            <div className='Projects_period'>2024.08.02 - 2024.08.27 (4인 프로젝트)</div>
+                            <div className='Projects_info'>
+                                <div className='Projects_img'>
+                                <div className='Projects_imgs'>
+                                    <Swiper
+                                        slidesPerView={1}
+                                        spaceBetween={30}
+                                        slidesPerGroup={1}
+                                        loop={true}
+                                        loopFillGroupWithBlank={true}
+                                        pagination={{
+                                        clickable: true,
+                                        }}
+                                        navigation={true}
+                                        modules={[Pagination, Navigation, Autoplay]}
+                                        className="mySwiper"
+                                        autoplay={{delay: 5000}}>
+                                            <SwiperSlide>
+                                                    <img className='pic_img' src='images/living1.png' alt='' />
+                                            </SwiperSlide>    
+                                            <SwiperSlide>
+                                                    <img className='pic_img' src='images/living2.png' alt='' />
+                                            </SwiperSlide>  
+                                            <SwiperSlide>
+                                                    <img className='pic_img' src='images/living3.png' alt='' />
+                                            </SwiperSlide>  
+                                            <SwiperSlide>
+                                                    <img className='pic_img' src='images/living4.png' alt='' />
+                                            </SwiperSlide>    
+                                    </Swiper>
+                                    </div>
+                                </div>
+                                <div className='Projects_descriptions'>
+                                    <div className='Projects_main_description'>
+                                        <ul>
+                                            <li><strong>한국물가협회 생활물가 기획조사</strong></li>
+                                            <li>제수용품, 김장 적기 김장 재료 실거래 가격 조사 및 공표 페이지</li>
+                                            <li>- 내부 고객의 요구에 부합하는 기획 페이지</li>
+                                            <li>- 프론트엔드와 백엔드(팀원)로 나누어 개발</li>
+                                            <li>- 동향/품목별 가격/시세 추이/보도자료 섹션 개발</li>
+                                            <li>- 사용자가 입력한 재료 수량과 가격을 기반으로 총 비용을 계산하는 차례상 비용 계산기 구현</li>
+                                        </ul>
+                                        {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
+                                    </div>
+                                    <div className='Projects_description'>
+                                        <div className='Projects_label'>URL</div>
+                                        <div className='Projects_value'>
+                                            <a href='https://www.kprc.or.kr/livingCost.do?modeType=livingCostTrend' target='_blank' rel='noreferrer'>
+                                                <div className='value_url'>https://www.kprc.or.kr/livingCost.do?modeType=livingCostTrend</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className='Projects_description'>
+                                        <div className='Projects_label'>Tech Stack</div>
+                                        <div className='Projects_value'>JSP / JavaScript / Java / CSS</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div className='Project'>
                             <div className='Projects_title'>한국물가협회 LOCAL CONTENTS</div>
-                            <div className='Projects_period'>2022.07.04 - 2022.07.15 (2인 프로젝트)</div>
+                            <div className='Projects_period'>2024.02.07 - 2024.07.03 (2인 프로젝트)</div>
                             <div className='Projects_info'>
                                 <div className='Projects_img'>
                                 <div className='Projects_imgs'>
@@ -74,7 +187,7 @@ const Project = () => {
                                         <ul>
                                             <li><strong>한국물가협회 지회 웹페이지 "메인화면" & "주요 지역산업" 제작</strong></li>
                                             <li>min-width:320px/ max-width:479px 모바일 기기에 맞춘 반응형 구현</li>
-                                            <li>- 요청자의 요구에 부합하는 지회 페이지</li>
+                                            <li>- 내부 고객의 요구에 부합하는 지회 페이지</li>
                                             <li>- 프론트엔드와 백엔드(팀원)로 나누어 개발</li>
                                             <li>[라이브러리]</li>
                                             <li>aos: 텍스트 애니메이션</li>
@@ -98,7 +211,7 @@ const Project = () => {
                         </div>
                         <div className='Project'>
                                 <div className='Projects_title'>한국물가협회 인재채용 페이지</div>
-                                <div className='Projects_period'>2022.07.04 - 2022.07.15 (개인 프로젝트)</div>
+                                <div className='Projects_period'>2023.06.09 - 2023.07.03 (개인 프로젝트)</div>
                                 <div className='Projects_info'>
                                     <div className='Projects_img'>
                                     <div className='Projects_imgs'>
@@ -141,7 +254,7 @@ const Project = () => {
                                             <ul>
                                                 <li><strong>한국물가협회 인재채용 페이지 제작</strong></li>
                                                 <li>min-width:320px/ max-width:479px 모바일 기기에 맞춘 반응형 구현</li>
-                                                <li>- 요청자의 요구에 부합하는 인재채용 페이지</li>
+                                                <li>- 내부 고객의 요구에 부합하는 인재채용 페이지</li>
                                                 <li>[라이브러리]</li>
                                                 <li>aos: 이미지 애니메이션</li>
                                             </ul>
@@ -407,9 +520,9 @@ const Project = () => {
                                         <div className='Projects_main_description'>
                                             <ul>
                                                 <li><strong>canvas를 활용한 손가락 DDR 게임 구현</strong></li>
-                                                <li>timer 변수를 선언하여 normal / hard / extreme 세가지 난이도로 구현</li>
-                                                <li>랜덤함수를 이용하여 무작위로 올라오는 화살표 구현</li>
-                                                <li>PHP를 활용하여 홈 화면 / 난이도에 따른 3가지 게임 화면으로 세분화</li>
+                                                <li>- timer 변수를 선언하여 normal / hard / extreme 세가지 난이도로 구현</li>
+                                                <li>- 랜덤함수를 이용하여 무작위로 올라오는 화살표 구현</li>
+                                                <li>- PHP를 활용하여 홈 화면 / 난이도에 따른 3가지 게임 화면으로 세분화</li>
                                             </ul>
                                             {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
                                         </div>
@@ -472,12 +585,12 @@ const Project = () => {
                                         <div className='Projects_main_description'>
                                             <ul>
                                                 <li><strong>기프트샵 웹사이트(JOODA) 구현</strong></li>
-                                                <li>로그인 / 회원가입 및 관리자 모드 구현</li>
-                                                <li>기프트 상품 상세보기</li>
-                                                <li>기프트 상품 등록 및 수정, 삭제</li>
-                                                <li>리뷰, 댓글 작성 및 삭제</li>
-                                                <li>MySQL과 연결하여 데이터 관리</li>
-                                                <li>php를 이용한 웹 페이지 구상</li>
+                                                <li>- 로그인 / 회원가입 및 관리자 모드 구현</li>
+                                                <li>- 기프트 상품 상세보기</li>
+                                                <li>- 기프트 상품 등록 및 수정, 삭제</li>
+                                                <li>- 리뷰, 댓글 작성 및 삭제</li>
+                                                <li>- MySQL과 연결하여 데이터 관리</li>
+                                                <li>- php를 이용한 웹 페이지 구상</li>
                                             </ul>
                                             {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
                                         </div>
@@ -546,7 +659,7 @@ const Project = () => {
                                         <div className='Projects_main_description'>
                                             <ul>
                                                 <li><strong>바닐라 스크립트로 야구 게임 구현</strong></li>
-                                                <li>랜덤함수를 이용하여 확률에 따라 다른 안타 / 홈런 / 아웃 등의 비율을 실제 경기처럼 구현</li>
+                                                <li>- 랜덤함수를 이용하여 확률에 따라 다른 안타 / 홈런 / 아웃 등의 비율을 실제 경기처럼 구현</li>
                                             </ul>
                                             {/* <div className='Projects_show_btn'>자세히 보기 ▶ READ ME</div> */}
                                         </div>
@@ -574,7 +687,6 @@ const Project = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </article>
             </div>
             <div id="Arrimg" onClick={go_up}><img src='/images/arrow.png' alt="arrow_pic" /></div> 

@@ -38,8 +38,6 @@ img, svg { vertical-align: middle; }
 @keyframes rotateBg {
   100% {
     left: 0;
-    /* transform: rotateX(70deg); */
-    /* transform: rotateY(90deg) */
   }
 }
 .Main .inner {
@@ -68,12 +66,12 @@ img, svg { vertical-align: middle; }
     opacity: 1;
   }
 }
-.Main .more .more_link {
+.Main .more .moreLink {
   position: relative;
   text-decoration: none;
   color: inherit;
 }
-.Main .more .more_link::after {
+.Main .more .moreLink::after {
   content: '';
   position: absolute;
   width: 0;
@@ -83,7 +81,7 @@ img, svg { vertical-align: middle; }
   left: 0;
   transition: width 0.3s ease;
 }
-.Main .more .more_link:hover::after {
+.Main .more .moreLink:hover::after {
   width: 100%;
 }
 

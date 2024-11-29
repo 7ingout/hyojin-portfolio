@@ -9,23 +9,21 @@ const About = () => {
             <Header /> 
             <div className='About'>
                 <h2>ABOUT ME</h2>
-                <div className='About_inner'>
+                <div className='AboutInner'>
                     <div className='Masthead'>
-                        <div className='Masthead_content'>
-                            <img src="/images/profile.png" alt=''/>
-                            <div className='Masthead_title'>
-                                <span>김효진(Hyojin Kim)</span>
-                                <div>Web 개발자 포트폴리오</div>
-                            </div>
-                            <div className='Masthead_divider'></div>
-                            <div className='Masthead_description'>심플함과 효율성으로 차별화된 웹 경험을 창조합니다.</div>
+                        <img src="/images/profile.png" alt=''/>
+                        <div className='MastheadTitle'>
+                            <span>김효진(Hyojin Kim)</span>
+                            <div>Web 개발자 포트폴리오</div>
                         </div>
+                        <div className='MastheadDivider'></div>
+                        <div className='MastheadDescription'>심플함과 효율성으로 차별화된 웹 경험을 창조합니다.</div>
                     </div>
                     <article className='AboutMe'>
-                        <div className='AboutMe_content'>
-                            <div className='AboutMe_basic_infos'>
-                                <div className='AboutMe_basic_info'>
-                                    <div className='AboutMe_basic_info_li'>
+                        <div className='AboutMeContent'>
+                            <div className='AboutMeInfos'>
+                                <div className='AboutMeInfo'>
+                                    <div className='AboutMeInfoLi'>
                                         <div className='AboutMe_icon_img'>
                                             <img className='AboutMe_icon_img2' src="/images/person-fill.svg" alt=''/>
                                         </div>
@@ -39,8 +37,8 @@ const About = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='AboutMe_basic_info'>
-                                    <div className='AboutMe_basic_info_li'>
+                                <div className='AboutMeInfo'>
+                                    <div className='AboutMeInfoLi'>
                                         <div className='AboutMe_icon_img'>
                                             <img className='AboutMe_icon_img2' src="/images/calendar-fill.svg" alt=''/>
                                         </div>
@@ -54,8 +52,8 @@ const About = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='AboutMe_basic_info'>
-                                    <div className='AboutMe_basic_info_li'>
+                                <div className='AboutMeInfo'>
+                                    <div className='AboutMeInfoLi'>
                                         <div className='AboutMe_icon_img'>
                                             <img className='AboutMe_icon_img2' src="/images/geo-alt-fill.svg" alt=''/>
                                         </div>
@@ -69,8 +67,8 @@ const About = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='AboutMe_basic_info'>
-                                    <div className='AboutMe_basic_info_li'>
+                                <div className='AboutMeInfo'>
+                                    <div className='AboutMeInfoLi'>
                                         <div className='AboutMe_icon_img'>
                                             <img className='AboutMe_icon_img2' src="/images/telephone-fill.svg" alt=''/>
                                         </div>
@@ -84,8 +82,8 @@ const About = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='AboutMe_basic_info'>
-                                    <div className='AboutMe_basic_info_li'>
+                                <div className='AboutMeInfo'>
+                                    <div className='AboutMeInfoLi'>
                                         <div className='AboutMe_icon_img'>
                                             <img className='AboutMe_icon_img2' src="/images/envelope-fill.svg" alt=''/>
                                         </div>
@@ -99,8 +97,8 @@ const About = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='AboutMe_basic_info'>
-                                    <div className='AboutMe_basic_info_li'>
+                                <div className='AboutMeInfo'>
+                                    <div className='AboutMeInfoLi'>
                                         <div className='AboutMe_icon_img'>
                                             <img className='AboutMe_icon_img2' src="/images/pencil-fill.svg" alt=''/>
                                         </div>

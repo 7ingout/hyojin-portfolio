@@ -9,10 +9,11 @@
     max-width: 1600px;
     margin: 0 auto;
     font-family: Pretendard-regular;
+    height: 680px;
 }
 .Skill h2 {
     text-align: center;
-    padding: 30px;
+    padding: 60px;
     text-decoration: underline;
 }
 .Skills_Skills {
