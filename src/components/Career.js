@@ -38,7 +38,7 @@ const Career = () => {
 
                                     <ul className='Career_works'>
                                         <h4 className='Career_works_title'>Python 개발</h4>
-                                        <li>조사1부/조사2부용 크롤링(스크래핑) 자동화 프로그램 개발</li>
+                                        <li>크롤링(스크래핑) 자동화 프로그램 개발</li>
                                         <li>전 부서 대상 파이썬 크롤링 교육 진행</li>
                                         <li>축산물 가격정보 수집 자동화 제안서 작성</li>
                                         <li>적산자료 예약 메일 프로시저 생성 및 실행(총 49,826건)</li>
@@ -158,7 +158,7 @@ const Career = () => {
 
                                     <ul className='Career_works'>
                                         <h4 className='Career_works_title'>부서 파견 근무</h4>
-                                        <li>회원부 / 조사부 / 기획조사부 파견 (2023.06.01~2023.08.31)</li>
+                                        <li>타부서 파견 (2023.06.01~2023.08.31)</li>
                                         <li>조사부 업무 교육 및 물가DB 입력</li>
                                         <li>기획조사부: 신규업체 등록, 광고 등록, 수금현황 정리</li>
                                         <li>정책변경에 따른 프로그램 일괄 수정 및 사용자 의견 반영</li>
