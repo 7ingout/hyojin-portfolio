@@ -27,7 +27,14 @@ const Career = () => {
                                     <div className='Career_description'>전산사업부 사원</div>
                                     <h4 className='Career_works_title'>2024년          </h4>
 
-
+                                    <ul className='Career_works'>
+                                        <h4 className='Career_works_title'>웹사이트 개발/유지보수 및 개선</h4>
+                                        <li>지회 웹사이트, 생활물가 기획조사, 단체급식 식재료 시장조사 등 웹사이트 신규 개발</li>
+                                        <li>대표 홈페이지(kprc.or.kr) 요소/오류/최적화 관련 코드 개발 및 쿼리 수정(총 35건)</li>
+                                        <li>기획과 디자인을 바탕으로 반응형 UI 구성 및 기능 구현</li>
+                                        <li>웹사이트 광고 게재 및 팝업창 관리</li>
+                                        <li>구글 애널리틱스4 연동 및 보고서 작성, 루커 스튜디오 데이터 시각화 리포트 제작</li>
+                                    </ul>
 
                                     <ul className='Career_works'>
                                         <h4 className='Career_works_title'>Python 개발</h4>
