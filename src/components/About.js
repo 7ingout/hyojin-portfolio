@@ -121,7 +121,6 @@ const About = () => {
                                     <li>SQLD</li>
                                     <li>컴퓨터활용능력 1급</li>
                                     <li>한국사능력검정시험 1급</li>
-                                    <li>KBS한국어능력시험 3+급</li>
                                 </ul>
                             </div>
                         </div>

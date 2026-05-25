@@ -25,6 +25,109 @@ const Project = () => {
                 <div>한국물가협회 LOCAL CONTENTS 프로젝트 제외, 모든 디자인은 제가 맡아 진행하였습니다.</div>
                 <article className='Profects_Projects'>
                     <div className='Projects_content'>
+
+                        {/* 1. 통합 ERP 프로젝트 */}
+<div className='Project'>
+    <div className='Projects_title'>사내 MIS 고도화 및 차세대 통합 ERP 구축</div>
+    <div className='Projects_period'>2025.01 - 진행중 (사내 프로젝트)</div>
+    <div className='Projects_info'>
+        <div className='Projects_img'>
+            {/* 사진이 없는 경우 레이아웃 유지를 위한 플레이스홀더 */}
+            <div className='No_image_placeholder' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%', backgroundColor: '#f4f4f4', color: '#888', fontSize: '14px', borderRadius: '4px' }}>
+                사내 보안 시스템 (No Image)
+            </div>
+        </div>
+        <div className='Projects_descriptions'>
+            <div className='Projects_main_description'>
+                <ul>
+                    <li><strong>차세대 통합 ERP 시스템 구축</strong></li>
+                    <li>기존 사내 MIS를 업무 흐름 중심으로 재설계하여 전사 시스템 구조 표준화의 기반을 마련한 프로젝트</li>
+                    <li>- 전사 데이터 관리 효율성 향상을 위한 기준정보(코드 관리, 권한 관리 등) 통합 화면 개발</li>
+                </ul>
+            </div>
+            <div className='Projects_description'>
+                <div className='Projects_label'>URL</div>
+                <div className='Projects_value'>
+                    <div className='value_url' style={{ color: '#aaa' }}>사내 ERP 시스템으로 외부 접근 제한</div>
+                </div>
+            </div>
+            <div className='Projects_description'>
+                <div className='Projects_label'>Tech Stack</div>
+                <div className='Projects_value'>Java / Oracle DB / SQL / HTML / JavaScript</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{/* 2. 물가 ERP 프로젝트 */}
+<div className='Project'>
+    <div className='Projects_title'>물가자료 ERP 시스템 및 감사 대응 기능 구축</div>
+    <div className='Projects_period'>2025.01 - 진행중 (사내 프로젝트)</div>
+    <div className='Projects_info'>
+        <div className='Projects_img'>
+            <div className='No_image_placeholder' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%', backgroundColor: '#f4f4f4', color: '#888', fontSize: '14px', borderRadius: '4px' }}>
+                사내 보안 시스템 (No Image)
+            </div>
+        </div>
+        <div className='Projects_descriptions'>
+            <div className='Projects_main_description'>
+                <ul>
+                    <li><strong>물가자료 핵심 프로세스 개발 및 감사 대응 시스템 구축</strong></li>
+                    <li>물가자료 업무 표준 프로세스를 기준으로 주요 화면 구조를 설계하고 데이터 정합성을 확보한 프로젝트</li>
+                    <li>- 감사 대응을 위한 표준 산출물(조사처대장, 조사상품기본조사표 등) 핵심 페이지 개발</li>
+                    <li>- 대용량 데이터 조회 및 레포트 출력 기능 구축을 통한 자료 준비 소요 시간 단축</li>
+                    <li>- 데이터 오류 방지를 위한 정밀 검증 로직 반영</li>
+                                      <li>- 시스템 도입 초기 전사 공유 및 실무자 이해도 제고를 위한 ERP 안내 리플렛 제작 지원</li>
+                </ul>
+            </div>
+            <div className='Projects_description'>
+                <div className='Projects_label'>URL</div>
+                <div className='Projects_value'>
+                    <div className='value_url' style={{ color: '#aaa' }}>사내 ERP 시스템으로 외부 접근 제한</div>
+                </div>
+            </div>
+            <div className='Projects_description'>
+                <div className='Projects_label'>Tech Stack</div>
+                <div className='Projects_value'>Java / Oracle DB / SQL / HTML / JavaScript</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{/* 3. 생활물가 ERP 프로젝트 */}
+<div className='Project'>
+    <div className='Projects_title'>생활물가 기획조사 특화 ERP 시스템 개발</div>
+    <div className='Projects_period'>2025.01 - 진행중 (사내 프로젝트)</div>
+    <div className='Projects_info'>
+        <div className='Projects_img'>
+            <div className='No_image_placeholder' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%', backgroundColor: '#f4f4f4', color: '#888', fontSize: '14px', borderRadius: '4px' }}>
+                사내 보안 시스템 (No Image)
+            </div>
+        </div>
+        <div className='Projects_descriptions'>
+            <div className='Projects_main_description'>
+                <ul>
+                    <li><strong>생활물가 기획조사 업무 맞춤형 기능 개발</strong></li>
+                    <li>생활물가 기획조사 등 도메인 특화 업무의 비효율을 개선하기 위해 전용 ERP 관리 기능을 설계·구현한 프로젝트</li>
+                    <li>- 현업부서 업무 프로세스를 분석하여 현업 요구사항 기반의 맞춤형 인터페이스 구현</li>
+                    <li>- 복잡한 데이터 입력, 수정, 검토 요청사항을 직관적으로 처리하는 관리자 기능 고도화</li>
+  
+                </ul>
+            </div>
+            <div className='Projects_description'>
+                <div className='Projects_label'>URL</div>
+                <div className='Projects_value'>
+                    <div className='value_url' style={{ color: '#aaa' }}>사내 ERP 시스템으로 외부 접근 제한</div>
+                </div>
+            </div>
+            <div className='Projects_description'>
+                <div className='Projects_label'>Tech Stack</div>
+                <div className='Projects_value'>Java / Oracle DB / SQL / HTML / JavaScript</div>
+            </div>
+        </div>
+    </div>
+</div>
+                    
                     <div className='Project'>
                             <div className='Projects_title'>한국물가협회 단체급식 식재료 시장조사</div>
                             <div className='Projects_period'>2024.08.02 - 2024.08.27 (개인 프로젝트)</div>
