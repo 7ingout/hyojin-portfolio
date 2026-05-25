@@ -24,147 +24,74 @@ const Career = () => {
                                 <div className='Career_info'>
                                     <div className='Career_title'>(사)한국물가협회</div>
                                     <div className='Career_period'>2022.11.14 - 재직중</div>
-                                    <div className='Career_description'>전산사업부 사원</div>
+                                    <div className='Career_description'>전산사업부 대리</div>
                                    
 
-                                    <ul className='Career_works'>
-                                         <h4 className='Career_works_title'>2024년</h4>
-                                        <h4 className='Career_works_title'>웹사이트 개발/유지보수 및 개선</h4>
-                                        <li>지회 웹사이트, 생활물가 기획조사, 단체급식 식재료 시장조사 등 웹사이트 신규 개발</li>
-                                        <li>대표 홈페이지(kprc.or.kr) 요소/오류/최적화 관련 코드 개발 및 쿼리 수정(총 35건)</li>
-                                        <li>기획과 디자인을 바탕으로 반응형 UI 구성 및 기능 구현</li>
-                                        <li>웹사이트 광고 게재 및 팝업창 관리</li>
-                                        <li>구글 애널리틱스4 연동 및 보고서 작성, 루커 스튜디오 데이터 시각화 리포트 제작</li>
-                                    </ul>
+                                  {/* 1. ERP 및 사내 시스템 고도화 */}
+<ul className='Career_works'>
+    <h4 className='Career_works_title'>시스템 개발 및 고도화</h4>
+    <h4 className='Career_works_title'>차세대 통합 ERP 구축 및 사내 시스템(MIS) 운영</h4>
+    <li>기존 사내 MIS를 업무 흐름 중심으로 재설계하여 차세대 통합 ERP 구조 구축 및 전사 시스템 구조 표준화 기반 마련</li>
+    <li>물가자료 ERP 업무 프로세스 기준 주요 화면 구조 설계·구현 및 사용자 편의성 제고</li>
+    <li>코드 관리, 권한 관리 등 기준정보를 체계적으로 관리하는 통합 ERP 주요 화면 개발 및 전사 데이터 관리 효율성 향상</li>
+    <li>감사 대응을 위한 표준 감사 산출물(조사처대장, 조사상품기본조사표 등) 페이지 개발 및 레포트 출력 기능 구축</li>
+    <li>생활물가 기획조사 업무 특성을 반영한 ERP 기능 설계 및 개발로 기존 관리 방식의 비효율 개선</li>
+    <li>사내 MIS 관련 데이터 조회·수정·보완 지원 및 유지보수</li>
+    <li>물가자료 ERP 전반에 대한 이해를 돕기 위한 안내 리플렛 제작 및 전 직원 대상 배포·공유</li>
+</ul>
 
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>Python 개발</h4>
-                                        <li>크롤링(스크래핑) 자동화 프로그램 개발</li>
-                                        <li>전 부서 대상 파이썬 크롤링 교육 진행</li>
-                                        <li>축산물 가격정보 수집 자동화 제안서 작성</li>
-                                        <li>적산자료 예약 메일 프로시저 생성 및 실행(총 49,826건)</li>
-                                    </ul>
+{/* 2. 웹사이트 개발 및 UI/UX 개선 */}
+<ul className='Career_works'>
+    <h4 className='Career_works_title'>웹 서비스 개발</h4>
+    <h4 className='Career_works_title'>웹사이트 신규 개발, 유지보수 및 UI/UX 고도화</h4>
+    <li>대표 홈페이지(kprc.or.kr) 운영, 지회 웹사이트, 생활물가 기획조사, 단체급식 식재료 시장조사 등 웹사이트 신규 개발</li>
+    <li>친환경건설자재, 임금명세서, 인재채용, 납품대금 연동제 등 비즈니스 요구에 맞춘 신규 서비스 페이지 기획 및 구현</li>
+    <li>대표 홈페이지 요소/오류/최적화 관련 코드 개발 및 쿼리 수정</li>
+    <li>HTML5, CSS3, SCSS를 활용하여 기획과 디자인에 맞춘 모바일 반응형 UI 구성 및 웹 페이지 구조 개선</li>
+    <li>GA4(구글 애널리틱스4) 연동 및 Looker Studio 기반 데이터 시각화 리포트 체계 구축을 통한 의사결정 지원</li>
+    <li>결제모듈 전환 등에 대비한 로컬 환경 사전 적용 및 기능 검증 테스트 수행으로 운영 리스크 선제적 점검</li>
+    <li>추천업체 섹션 신규 기능 구축을 통한 홈페이지 콘텐츠 개선</li>
+    <li>책자, 팝업창, 공지사항, 배너 등 시각적 매력을 고려한 각종 이미지 디자인 제작 및 광고 게재 관리</li>
+</ul>
 
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>웹 디자인</h4>
-                                        <li>책자/팝업창/공지사항/배너 등 각종 이미지 제작 총 42건</li>
-                                        <li>각 업체 아이덴티티에 맞는 배너 광고 디자인 및 이미지 해상도 개선</li>
-                                    </ul>
+{/* 3. Python 기반 데이터 자동화 */}
+<ul className='Career_works'>
+    <h4 className='Career_works_title'>데이터 자동화</h4>
+    <h4 className='Career_works_title'>Python 기반 웹 크롤링 자동화 시스템 구축 및 배치 프로세스 구현</h4>
+    <li>Python 기반 웹 크롤링 자동화 프로그램을 개발하여 기존 수작업 데이터 수집 업무 자동화 및 소요 시간 단축</li>
+    <li>중고차 연식별 시세 정보 자동 수집 기능 개발 및 활용 편의성을 위한 인터페이스 구현</li>
+    <li>쇼핑몰 상품 정보(가격·할인·판매 상태 판별 로직) 자동 수집 및 데이터 정리·검토 업무 자동화 프로세스 구축</li>
+    <li>화학공업약품 및 원자재 가격 데이터 추출 프로그램 개발</li>
+    <li>전 부서 대상 파이썬 크롤링 교육 진행 및 대표 웹페이지 크롤링 샘플 가이드 작성으로 사내 전산 역량 강화</li>
+    <li>축산물 가격정보 수집 자동화 제안서 작성으로 기술 기반의 업무 개선 방향 제시</li>
+    <li>적산자료 예약 메일 프로시저 생성 및 대용량 메일 발송 프로세스 안정적 실행 </li>
+    <li>관심품목 메일 서비스 자동 발송 및 PDF 업로드/공지사항 연동 프로세스 자동화</li>
+</ul>
 
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>데이터 관리 및 자동화</h4>
-                                        <li>PDF 업로드 및 공지사항 등록, 관심품목 메일 서비스 자동 발송(261건)</li>
-                                        <li>DB 공급 PDF 목차 생성, 우수업체 탐방 이미지 갱신 등 후속작업 수행</li>
-                                        <li>주소록 엑셀 업로드(102건), 시가 및 원가 프로그램 데이터 수정</li>
-                                    </ul>
+{/* 4. DB 및 인프라 운영 보안 */}
+<ul className='Career_works'>
+    <h4 className='Career_works_title'>인프라 및 보안</h4>
+    <h4 className='Career_works_title'>데이터베이스 관리, 시스템 인프라 운영 및 웹 보안 강화</h4>
+    <li>Oracle 쿼리 작성 및 최적화, 한국부동산원 SQL 쿼리 수정 및 데이터 변환 작업 수행</li>
+    <li>시가 및 원가 프로그램 데이터 지속 수정·보완을 통한 전사 데이터 정합성 유지</li>
+    <li>비정상 접근 시도(SQL Injection 등) 로그 분석을 통한 보안 위협 점검 및 메인 페이지 리다이렉트 호출 구조 정비</li>
+    <li>검색엔진 설정 및 접근 제어 관리(robots.txt 수정 등)를 통해 검색 노출 정책 관리 및 시스템 운영 안정성 확보</li>
+    <li>정기적인 서버 점검, 로그 관리, FTP 재부팅 수행 및 사내 IP 할당 작업 처리</li>
+    <li>물가자료 마감 선·후속 작업 프로세스 체계적 관리를 통해 정기 발간 업무의 안정성 및 업무 연속성 확보</li>
+</ul>
 
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>회원 프로그램 관리</h4>
-                                        <li>회원 프로그램 개발 및 수정 31건</li>
-                                        <li>데이터 입력/수정/검토 등 요청사항 처리 총 224건</li>
-                                        <li>지회 회원 프로그램 관련 수정 및 데이터 처리 총 45건</li>
-                                    </ul>
-
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>전산/서버 관리</h4>
-                                        <li>서버 점검 및 일지 작성</li>
-                                        <li>전산소모품 재고 조사 및 분출 관리</li>
-                                        <li>사내 전산지원 요청 처리 16건</li>
-                                        <li>세미나 및 교육 참가 13건</li>
-                                        <li>휴대폰 본인인증 사용현황 및 회원 수치 문서 작성</li>
-                                        <li>타부서 PDF 교체 요청 처리</li>
-                                    </ul>
-
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>e프라이버시 클린서비스</h4>
-                                        <li>회원탈퇴 민원 처리 72건</li>
-                                    </ul>
-
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>인터넷 회원 문의 응대</h4>
-                                        <li>총 74건 전화 응대 및 처리</li>
-                                    </ul>
-                                    
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>2023년</h4>
-                                        <h4 className='Career_works_title'>웹사이트 개발/유지보수 및 개선</h4>
-                                        <li>웹사이트 개발 및 수정 83건</li>
-                                        <li>신규 페이지 개발 6건 (2023, 2024 친환경건설자재 / 임금명세서 / 인재채용 / 납품대금 연동제 / 지회 웹페이지)</li>
-                                        <li>요소 삽입/삭제/수정 19건</li>
-                                        <li>데이터 갱신 관련 코드 수정 16건</li>
-                                        <li>페이지 오류 수정 15건</li>
-                                        <li>페이지 최적화 코드 개발 22건</li>
-                                        <li>모바일 반응형 코드 개발 5건</li>
-                                        <li>쿼리 수정: 메인페이지 / Price store / 협회소개 / 물가자료 게시판 / 관리자 페이지 / 상단 메뉴 / 검색창 / 결제 프로세스 / 마이페이지 등</li>
-                                    </ul>
-
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>프론트엔드</h4>
-                                        <li>웹 페이지 UI 개선 및 반응형 설계</li>
-                                        <li>CSS 수정 및 사용자 경험(UX) 개선</li>
-                                        <li>HTML5, CSS3, SCSS를 통한 레이아웃 구성</li>
-                                        <li>메인배너 및 각종 배너/이미지 제작</li>
-                                        <li>웹 디자인: 시각적 매력을 고려한 배너 광고 디자인 및 이미지 퀄리티 향상</li>
-                                    </ul>
-
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>백엔드</h4>
-                                        <li>Oracle 쿼리 작성 및 최적화</li>
-                                        <li>회원 및 지회 프로그램 수정 154건 (회원: 141건, 지회: 13건)</li>
-                                        <li>갱신 메일링 프로시저 개발</li>
-                                        <li>서버 점검 및 로그 관리, 오류 분석</li>
-                                    </ul>
-
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>데이터 자동화 / 크롤링</h4>
-                                        <li>Python을 활용한 가격정보 자동 크롤링 프로그램 개발 2건</li>
-                                        <li>화학공업약품 및 원자재 가격 데이터 추출</li>
-                                        <li>대표 웹페이지 데이터 크롤링 샘플 가이드 작성</li>
-                                    </ul>
-
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>이미지 및 시각자료 제작</h4>
-                                        <li>이미지 제작 총 65건 (책자, 팝업창, 공지사항, 배너, 신규페이지 등)</li>
-                                        <li>PDF 목차 생성 7건</li>
-                                        <li>우수업체 탐방 이미지 갱신</li>
-                                    </ul>
-
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>고객 대응 및 사이트 운영</h4>
-                                        <li>고객의 소리 민원 처리 39건 (전산문의/타부서 전달/게시물 삭제)</li>
-                                        <li>회원 문의전화 대응 35건</li>
-                                        <li>e프라이버시 클린서비스 회원탈퇴 민원 48건</li>
-                                        <li>사이트 권한 부여 요청 처리</li>
-                                        <li>광고 게재 및 팝업창 관리</li>
-                                    </ul>
-
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>운영 및 내부지원</h4>
-                                        <li>전산지원 60건 (프린터, 인증서, 하이웍스 등)</li>
-                                        <li>서버 점검, FTP 재부팅, 오류 전달</li>
-                                        <li>전산 소모품 관리 및 재고 조사</li>
-                                        <li>IP 할당 작업 15건</li>
-                                        <li>문서 작성 11건, 회의 참석 3건, 전산 세미나 참석 3건</li>
-                                        <li>부서 문서 취합 및 서무 업무</li>
-                                        <li>세금계산서 청구 및 수금사항 등록</li>
-                                    </ul>
-
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>데이터 관리 및 공공사업</h4>
-                                        <li>물가자료 PDF 업로드 및 공지사항 등록</li>
-                                        <li>관심품목 메일 서비스 172건</li>
-                                        <li>디지털 물가자료 계약 문서 작성 및 보험/인지세 처리</li>
-                                        <li>데이터바우처 사업: 홍보물 메일링 프로시저 작업</li>
-                                        <li>한국부동산원 SQL 쿼리 수정 및 데이터 변환</li>
-                                    </ul>
-
-                                    <ul className='Career_works'>
-                                        <h4 className='Career_works_title'>부서 파견 근무</h4>
-                                        <li>타부서 파견 (2023.06.01~2023.08.31)</li>
-                                        <li>조사부 업무 교육 및 물가DB 입력</li>
-                                        <li>기획조사부: 신규업체 등록, 광고 등록, 수금현황 정리</li>
-                                        <li>정책변경에 따른 프로그램 일괄 수정 및 사용자 의견 반영</li>
-                                    </ul>
+{/* 5. IT 지원 및 행정 관리 */}
+<ul className='Career_works'>
+    <h4 className='Career_works_title'>IT 지원 및 행정</h4>
+    <h4 className='Career_works_title'>사내 IT 기술 지원, 대외 민원 대응 및 부서 행정 지원</h4>
+    <li>e프라이버시 클린서비스 처리 및 홈페이지 이용 관련 회원 문의 대응 </li>
+    <li>프린터, 인증서, 하이웍스 등 사내 전산지원 요청사항 신속 처리</li>
+    <li>사내 전산 소모품 운영 관리 및 재고 조사를 통한 안정적인 전산 환경 구축 지원</li>
+    <li>디지털 물가자료 계약 문서 작성, 보험/인지세 처리, 데이터바우처 사업 홍보물 메일링 프로시저 작업 수행</li>
+    <li>세금계산서 청구 및 수금사항 등록 등 부서 내 서무 및 일반 행정 업무 지원</li>
+    <li>조사부 및 기획조사부 파견 근무를 통해 물가 DB 입력, 신규 업체/광고 등록 등 현업 도메인 비즈니스 프로세스 반영</li>
+    <li>직무 전문성 강화를 위해 외부 교육 및 IT 전문 세미나 지속 참석</li>
+</ul>
                                     </div>
                             </div>
                             <div className='Career_company secondCompany'>
