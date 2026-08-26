@@ -1,0 +1,64 @@
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero h1 {
+    font-family: var(--en);
+    font-weight: 700;
+    font-size: var(--text-display);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    padding-bottom: 0.08em;
+    background: linear-gradient(120deg, #fff 20%, var(--accent) 60%, var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero .sub {
+    font-size: clamp(1.1rem, 2.3vw, 1.45rem);
+    color: var(--muted);
+    margin-top: 28px;
+    max-width: 680px;
+}
+.hero .sub b {
+    color: var(--text);
+    font-weight: 500;
+}
+.cta {
+    display: flex;
+    gap: 16px;
+    margin-top: 48px;
+    flex-wrap: wrap;
+}
+.btn {
+    font-family: var(--en);
+    font-size: 0.92rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    padding: 14px 26px;
+    border-radius: 12px;
+    transition: 0.25s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.btn.primary {
+    background: linear-gradient(120deg, var(--accent), var(--accent-2));
+    color: #fff;
+    box-shadow: 0 8px 30px rgba(124, 92, 255, 0.35);
+}
+.btn.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 40px rgba(124, 92, 255, 0.5);
+}
+.btn.ghost {
+    border: 1px solid var(--hair);
+    color: var(--text);
+}
+.btn.ghost:hover {
+    border-color: var(--accent);
+    background: rgba(124, 92, 255, 0.08);
+    transform: translateY(-3px);
+}

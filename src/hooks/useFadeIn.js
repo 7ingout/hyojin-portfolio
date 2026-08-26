@@ -1,23 +1,30 @@
 import { useEffect, useRef } from 'react';
 
 /**
- * Adds the `is-visible` class (see .fade-up in tokens.css) once the element
- * scrolls into view. Respects prefers-reduced-motion by letting the CSS
- * media query keep everything visible regardless of this class.
+ * Ports mockup.html's reveal-on-scroll behavior: pairs with the `.reveal`
+ * class in tokens.css. Adds `.in` once the element scrolls into view, and
+ * respects prefers-reduced-motion via the CSS media query (which forces
+ * `.reveal` fully visible regardless of this class).
+ *
+ * `delay` (ms) mirrors the mockup's per-index transitionDelay stagger.
  */
-const useFadeIn = (options = { threshold: 0.15 }) => {
+const useFadeIn = ({ threshold = 0.12, delay = 0 } = {}) => {
   const ref = useRef(null);
 
   useEffect(() => {
     const node = ref.current;
     if (!node) return undefined;
 
+    if (delay) {
+      node.style.transitionDelay = `${delay}ms`;
+    }
+
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
+        entry.target.classList.add('in');
         observer.unobserve(entry.target);
       }
-    }, options);
+    }, { threshold });
 
     observer.observe(node);
     return () => observer.disconnect();
