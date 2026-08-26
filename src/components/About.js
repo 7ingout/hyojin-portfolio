@@ -1,138 +1,30 @@
 import React from 'react';
-import './css/About.css'
-import Footer from './Footer';
-import Header from './Header';
+import './css/About.css';
 import useFadeIn from '../hooks/useFadeIn';
 
 const About = () => {
-    const mastheadRef = useFadeIn();
-    const infoRef = useFadeIn();
+    const eyebrowRef = useFadeIn();
+    const titleRef = useFadeIn({ delay: 60 });
+    const bodyRef = useFadeIn({ delay: 120 });
 
     return (
-        <div>
-            <Header />
-            <div className='About container-wide'>
-                <h2>ABOUT ME</h2>
-                <div className='AboutInner'>
-                    <div className='Masthead fade-up' ref={mastheadRef}>
-                        <img src="/images/profile.png" alt=''/>
-                        <div className='MastheadTitle'>
-                            <span>김효진(Hyojin Kim)</span>
-                            <div>Web 개발자 포트폴리오</div>
-                        </div>
-                        <div className='MastheadDivider'></div>
-                        <div className='MastheadDescription'>심플함과 효율성으로 차별화된 웹 경험을 창조합니다.</div>
-                    </div>
-                    <article className='AboutMe fade-up' ref={infoRef}>
-                        <div className='AboutMeContent'>
-                            <div className='AboutMeInfos'>
-                                <div className='AboutMeInfo'>
-                                    <div className='AboutMeInfoLi'>
-                                        <div className='AboutMe_icon_img'>
-                                            <img className='AboutMe_icon_img2' src="/images/person-fill.svg" alt=''/>
-                                        </div>
-                                        <div className='AboutMe_field'>
-                                            <div className='AboutMe_field_label'>
-                                                이름
-                                            </div>
-                                            <div className='AboutMe_field_value'>
-                                                김효진
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='AboutMeInfo'>
-                                    <div className='AboutMeInfoLi'>
-                                        <div className='AboutMe_icon_img'>
-                                            <img className='AboutMe_icon_img2' src="/images/calendar-fill.svg" alt=''/>
-                                        </div>
-                                        <div className='AboutMe_field'>
-                                            <div className='AboutMe_field_label'>
-                                                생년월일
-                                            </div>
-                                            <div className='AboutMe_field_value'>
-                                                1998.01.15
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='AboutMeInfo'>
-                                    <div className='AboutMeInfoLi'>
-                                        <div className='AboutMe_icon_img'>
-                                            <img className='AboutMe_icon_img2' src="/images/geo-alt-fill.svg" alt=''/>
-                                        </div>
-                                        <div className='AboutMe_field'>
-                                            <div className='AboutMe_field_label'>
-                                                주소지
-                                            </div>
-                                            <div className='AboutMe_field_value'>
-                                                대한민국 서울특별시 금천구
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='AboutMeInfo'>
-                                    <div className='AboutMeInfoLi'>
-                                        <div className='AboutMe_icon_img'>
-                                            <img className='AboutMe_icon_img2' src="/images/telephone-fill.svg" alt=''/>
-                                        </div>
-                                        <div className='AboutMe_field'>
-                                            <div className='AboutMe_field_label'>
-                                                연락처
-                                            </div>
-                                            <div className='AboutMe_field_value'>
-                                                010-9660-8854
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='AboutMeInfo'>
-                                    <div className='AboutMeInfoLi'>
-                                        <div className='AboutMe_icon_img'>
-                                            <img className='AboutMe_icon_img2' src="/images/envelope-fill.svg" alt=''/>
-                                        </div>
-                                        <div className='AboutMe_field'>
-                                            <div className='AboutMe_field_label'>
-                                                이메일
-                                            </div>
-                                            <div className='AboutMe_field_value'>
-                                                hadvjin@naver.com
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='AboutMeInfo'>
-                                    <div className='AboutMeInfoLi'>
-                                        <div className='AboutMe_icon_img'>
-                                            <img className='AboutMe_icon_img2' src="/images/pencil-fill.svg" alt=''/>
-                                        </div>
-                                        <div className='AboutMe_field'>
-                                            <div className='AboutMe_field_label'>
-                                                학력
-                                            </div>
-                                            <div className='AboutMe_field_value'>
-                                                영남대학교 정보통신공학과
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='cer'>
-                                <h1>- 보유 자격증 목록 -</h1>
-                                <ul>
-                                    <li>정보통신기사</li>
-                                    <li>정보처리기사</li>
-                                    <li>SQLD</li>
-                                    <li>컴퓨터활용능력 1급</li>
-                                    <li>한국사능력검정시험 1급</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </article>
+        <section id='about'>
+            <div className='eyebrow reveal' ref={eyebrowRef}>About</div>
+            <h2 className='title reveal' ref={titleRef}>기획부터 운영까지, 스스로 해내는 개발자</h2>
+            <div className='about-body reveal' ref={bodyRef}>
+                <p>4년 6개월간 ERP 구축·운영을 중심으로 웹 서비스 개발, 데이터 자동화, 인프라 운영까지 폭넓게 경험하며, 기획부터 개발·운영까지 직접 해내는 <b>올라운드 개발자</b>로 성장해왔습니다.</p>
+                <p>현업의 업무 흐름을 분석해 물가조사·기준정보·권한 관리를 아우르는 ERP를 설계·구축하였고, 데이터 정합성 체계와 업무 프로세스 재정립을 통해 오류를 구조적으로 줄이는 데 강점이 있습니다. Java·SQL·Oracle DB 기반 개발과 함께, 대표 홈페이지·신규 서비스 개발 및 모바일 반응형 UI 개선 등 웹 전반도 직접 수행해왔습니다.</p>
+                <p>또한 Python 기반 업무 자동화와 서버 운영 점검 자동화로 반복 업무를 제거하고, 생성형 AI를 개발 전 과정에 적극 활용해 개발 생산성을 높여왔습니다. 새로운 기술과 도구를 빠르게 익혀 실무에 적용하며, 어떤 환경에서도 필요한 역할을 스스로 찾아 해내는 개발자입니다.</p>
+                <div className='chips'>
+                    <span className='chip'>정보통신기사</span>
+                    <span className='chip'>정보처리기사</span>
+                    <span className='chip'>SQLD</span>
+                    <span className='chip'>컴활 1급</span>
+                    <span className='chip'>한국사 1급</span>
+                    <span className='chip'>TOEIC Speaking IH</span>
                 </div>
             </div>
-            <Footer />
-        </div>
+        </section>
     );
 };
 

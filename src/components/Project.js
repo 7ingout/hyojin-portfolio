@@ -17,11 +17,11 @@ const Project = () => {
     return (
         <div>
             <Nav variant='minimal' />
-            <div className='Project_box container-wide'>
-                <h2>PROJECTS</h2>
+            <div className='Project_box wrap'>
+                <h2 className='title'>PROJECTS</h2>
                 <div className='Project_note'>한국물가협회 LOCAL CONTENTS 프로젝트 제외, 모든 디자인은 제가 맡아 진행하였습니다.</div>
                 <article className='Profects_Projects'>
-                    <div className='Projects_content fade-up' ref={contentRef}>
+                    <div className='Projects_content reveal in' ref={contentRef}>
 
                         {/* 1. 통합 ERP 프로젝트 */}
 <div className='Project'>
