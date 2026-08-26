@@ -1,0 +1,55 @@
+.Hero {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding-block: var(--space-7);
+}
+.Hero_inner {
+    width: 100%;
+}
+.Hero_name {
+    font-size: var(--text-display);
+    margin-top: var(--space-2);
+    margin-bottom: var(--space-4);
+}
+.Hero_intro {
+    max-width: var(--container-narrow);
+    margin-bottom: var(--space-5);
+}
+.Hero_intro p {
+    font-size: clamp(1.05rem, 2vw, 1.35rem);
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+.Hero_accent {
+    color: var(--text);
+    font-weight: 600;
+}
+.Hero_links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+}
+.Hero_links a {
+    position: relative;
+    padding-bottom: 4px;
+    font-size: var(--text-small);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+.Hero_links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: var(--text);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--duration-base) var(--ease-out), background var(--duration-base) var(--ease-out);
+}
+.Hero_links a:hover::after {
+    transform: scaleX(1);
+    background: var(--accent);
+}

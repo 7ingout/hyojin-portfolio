@@ -1,58 +1,49 @@
-@font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
 .Skill {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    font-family: Pretendard-regular;
-    height: 680px;
+    padding-block: var(--space-6) var(--space-8);
 }
 .Skill h2 {
-    text-align: center;
-    padding: 60px;
-    text-decoration: underline;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: var(--text-h1);
+    letter-spacing: -0.01em;
+    padding-bottom: var(--space-4);
+    margin-bottom: var(--space-6);
+    border-bottom: 1px solid var(--hairline);
 }
 .Skills_Skills {
-    /* background-color: #f9c51d; */
-    background-color: #B5C0D0;
-    border-radius: 25px;
-  }
-  .Skills_content {
-    width: 100%;
-    max-width: 1200px;
-    padding: 60px;
-    margin: 0 auto;
-    height: 500px;
-  }
-  .Skills_tech_stacks_container {
+    max-width: 900px;
+}
+.Skills_tech_stacks_container {
     display: flex;
-    justify-content: center;
-  }
-  .Skills_tech_stacks {
-    box-sizing: border-box;
-    flex-shrink: 0;
-    width: 220px;
-    padding: 30px;
-    margin: 0 20px;
-    border-radius: 1rem;
-    background-color: #fff;
-    box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2);
-  }
-  .Skills_title {
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid #ccc;
-    font-weight: 700;
-    font-size: 22px;
-    color: #f4623a;
-    text-align: center;
-  }
-  .Skills_img {
+    flex-direction: column;
+}
+.Skills_tech_stacks {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    gap: var(--space-4);
+    padding-block: var(--space-4);
+    border-bottom: 1px solid var(--hairline);
+}
+.Skills_tech_stacks:first-child {
+    border-top: 1px solid var(--hairline);
+}
+.Skills_title {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 1.35rem;
+    letter-spacing: -0.01em;
+}
+.Skills_img {
     display: block;
-    width: 100%;
-  }
-  
+    max-height: 56px;
+    width: auto;
+    max-width: 100%;
+}
+
+@media (max-width: 640px) {
+    .Skills_tech_stacks {
+        grid-template-columns: 1fr;
+        gap: var(--space-2);
+    }
+}

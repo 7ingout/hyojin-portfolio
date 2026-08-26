@@ -1,109 +1,124 @@
-@font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
 .About {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    font-family: Pretendard-regular;
+    padding-block: var(--space-6) var(--space-8);
 }
 .About h2 {
-    text-align: center;
-    padding: 60px;
-    text-decoration: underline;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: var(--text-h1);
+    letter-spacing: -0.01em;
+    padding-bottom: var(--space-4);
+    margin-bottom: var(--space-6);
+    border-bottom: 1px solid var(--hairline);
 }
-  .Masthead {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-  }
-  .Masthead img {
-    width: 200px;
-  }
-  .MastheadTitle {
+.Masthead {
+    max-width: var(--container-narrow);
+    margin-bottom: var(--space-7);
+}
+.Masthead img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 999px;
+    margin-bottom: var(--space-4);
+}
+.MastheadTitle {
+    font-family: var(--font-display);
     font-weight: 400;
-    font-size: 46px;
+    font-size: var(--text-h2);
     word-break: keep-all;
-    
-  }
-  .MastheadTitle span {
-    font-weight: bold;
-  }
-  .MastheadTitle div {
-    margin-top: 10px;
-    font-size: 40px;
-  }
-  .MastheadDivider {
-    width: 60px;
+}
+.MastheadTitle span {
+    font-weight: 600;
+}
+.MastheadTitle div {
+    margin-top: var(--space-1);
+    font-size: var(--text-h3);
+    color: var(--text-muted);
+    font-family: var(--font-sans);
+}
+.MastheadDivider {
+    width: 40px;
     height: 0;
-    margin: 25px auto;
+    margin: var(--space-4) 0;
     border: none;
-    border-top: 3px solid burlywood;
-    opacity: 1;
-  }
-  .MastheadDescription {
-    margin: 0 auto 20px;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 1.5;
-  }
-  .AboutMeContent {
-    width: 100%;
-    max-width: 1200px;
-    padding: 5px 40px 40px 40px;
-    margin: 0 auto;
-  }
-  .AboutMeInfos {
+    border-top: 2px solid var(--accent);
+}
+.MastheadDescription {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+.AboutMeContent {
+    max-width: 1000px;
+}
+.AboutMeInfos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-5) var(--space-4);
+    padding-bottom: var(--space-6);
+    margin-bottom: var(--space-6);
+    border-bottom: 1px solid var(--hairline);
+}
+.AboutMeInfoLi {
     display: flex;
-    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-2);
+}
+.AboutMe_icon_img {
+    width: 18px;
+    min-width: 18px;
+    margin-top: 4px;
+    opacity: 0.45;
+    filter: grayscale(1);
+}
+.AboutMe_icon_img2 {
+    width: 100%;
+}
+.AboutMe_field_label {
+    margin-bottom: 4px;
+    font-size: var(--text-label);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+.AboutMe_field_value {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.cer {
+    max-width: var(--container-narrow);
+}
+.cer h1 {
+    font-family: var(--font-sans);
+    font-size: var(--text-label);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: var(--space-3);
+}
+.cer ul {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .AboutMeInfo {
-    width: 33.3333%;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  .AboutMeInfoLi {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-    max-width: 280px;
-    margin: 0 auto;
-    opacity: 0.8;
-  }
-  .AboutMe_icon_img {
-    width: 35px;
-    min-width: 35px;
-    margin-top: 10px;
-    margin-right: 40px;
-  }
-  .AboutMe_icon_img2 {
-    width: 100%;
-  }
-  .AboutMe_field_label {
-    margin-bottom: 8px;
-    font-weight: 700;
-    font-size: 20px;
-  }
-  .AboutMe_field_value {
-    font-weight: 400;
-    font-size: 18px;
-  }
-  .cer {
-    text-align: center;
-    margin-top: 45px;
-    font-size: 18px;
-  }
-  .cer ul {
-    margin-top: 20px;
-  }
-  .cer ul li {
-    margin: 10px 0;
-  }
+    gap: var(--space-2);
+}
+.cer ul li {
+    margin: 0;
+    padding: 6px 14px;
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    font-size: var(--text-small);
+    color: var(--text);
+}
+
+@media (max-width: 720px) {
+    .AboutMeInfos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 480px) {
+    .AboutMeInfos {
+        grid-template-columns: 1fr;
+    }
+}

@@ -2,15 +2,19 @@ import React from 'react';
 import './css/About.css'
 import Footer from './Footer';
 import Header from './Header';
+import useFadeIn from '../hooks/useFadeIn';
 
 const About = () => {
+    const mastheadRef = useFadeIn();
+    const infoRef = useFadeIn();
+
     return (
-        <div>           
-            <Header /> 
-            <div className='About'>
+        <div>
+            <Header />
+            <div className='About container-wide'>
                 <h2>ABOUT ME</h2>
                 <div className='AboutInner'>
-                    <div className='Masthead'>
+                    <div className='Masthead fade-up' ref={mastheadRef}>
                         <img src="/images/profile.png" alt=''/>
                         <div className='MastheadTitle'>
                             <span>김효진(Hyojin Kim)</span>
@@ -19,7 +23,7 @@ const About = () => {
                         <div className='MastheadDivider'></div>
                         <div className='MastheadDescription'>심플함과 효율성으로 차별화된 웹 경험을 창조합니다.</div>
                     </div>
-                    <article className='AboutMe'>
+                    <article className='AboutMe fade-up' ref={infoRef}>
                         <div className='AboutMeContent'>
                             <div className='AboutMeInfos'>
                                 <div className='AboutMeInfo'>

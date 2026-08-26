@@ -1,96 +1,63 @@
-@font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
 .Archiving {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    font-family: Pretendard-regular;
-    height: 680px;
+    padding-block: var(--space-6) var(--space-8);
 }
 .Archiving h2 {
-    text-align: center;
-    padding: 60px;
-    text-decoration: underline;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: var(--text-h1);
+    letter-spacing: -0.01em;
+    padding-bottom: var(--space-4);
+    margin-bottom: var(--space-6);
+    border-bottom: 1px solid var(--hairline);
 }
 
-.Archiving_Archiving {
-    background-color: #F5E8DD;
-    border-radius: 25px;
-  }
-  .Archiving_content {
-    width: 100%;
-    max-width: 71.25rem;
-    padding: 60px;
-    margin: 0 auto;
-    margin-bottom: 186px;
-  }
-  .Archiving_container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-  }
-  .Archiving_git-hub {
-    width: 26rem;
-    padding: 2rem;
-    border-radius: 1rem;
-    background-color: #f5f5f5;
+.Archiving_content {
+    max-width: var(--container-wide);
+}
+.Archiving_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-4);
+}
+.Archiving_git-hub,
+.Archiving_tistory {
+    padding: var(--space-4);
+    border: 1px solid var(--hairline);
+    border-radius: 8px;
     cursor: pointer;
-    transition: 0.5s;
-    box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
-  }
-  .Archiving_git-hub:hover {
-    transform: translateY(5%);
-  }
-  .Archiving_git-hub:hover .Archiving_url {
-    color: #f4623a;
-  }
-  .Archiving_tistory {
-    width: 26rem;
-    padding: 2rem;
-    border-radius: 1rem;
-    background-color: #f5f5f5;
-    cursor: pointer;
-    transition: 0.5s;
-    box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
-  }
-  .Archiving_tistory:hover {
-    transform: translateY(5%);
-  }
-  .Archiving_tistory:hover .Archiving_url {
-    color: #f4623a;
-  }
-  .Archiving_img_wrapper {
+    transition: border-color var(--duration-base) var(--ease-out);
+}
+.Archiving_git-hub:hover,
+.Archiving_tistory:hover {
+    border-color: var(--accent);
+}
+.Archiving_git-hub:hover .Archiving_url,
+.Archiving_tistory:hover .Archiving_url {
+    color: var(--accent);
+}
+.Archiving_img_wrapper {
     display: block;
-    width: 12rem;
-    margin-bottom: 1rem;
-  }
-  .Archiving_img {
+    width: 2.5rem;
+    margin-bottom: var(--space-3);
+}
+.Archiving_img {
     width: 100%;
-  }
-  .Archiving_url {
-    margin-bottom: 1rem;
-    color: #258ddb;
-  }
-  .Archiving_description {
-    color: #444;
-  }
-  .Archiving_description ul {
-    padding-top: 10px;
-    padding-left: 5px;
-    margin: 0;
-  }
-  .Archiving_description ul li {
-    margin-bottom: 0.5rem;
-  }
-  .Archiving_description ul li::marker {
-    unicode-bidi: isolate;
-    font-variant-numeric: tabular-nums;
-    text-transform: none;
-    text-indent: 0px !important;
-    text-align: start !important;
-    text-align-last: start !important;
-  }
+    filter: grayscale(1);
+}
+.Archiving_url {
+    margin-bottom: var(--space-2);
+    font-weight: 600;
+    color: var(--text);
+    transition: color var(--duration-base) var(--ease-out);
+}
+.Archiving_description {
+    color: var(--text-muted);
+    font-size: var(--text-small);
+    line-height: 1.7;
+}
+.Archiving_description ul {
+    padding-top: var(--space-2);
+}
+.Archiving_description ul li {
+    margin-bottom: 4px;
+}

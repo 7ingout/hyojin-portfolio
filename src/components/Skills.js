@@ -2,21 +2,18 @@ import React from 'react';
 import Header from './Header';
 import './css/Skills.css'
 import Footer from './Footer';
+import useFadeIn from '../hooks/useFadeIn';
 
 const Skills = () => {
+    const listRef = useFadeIn();
+
     return (
-        <div> 
+        <div>
             <Header />
-            <div className='Skill'>
+            <div className='Skill container-wide'>
                 <h2>SKILLS</h2>
                 <article className='Skills_Skills'>
-                    <div className='Skills_content'>
-                        {/* <div className='SectionTitle'>
-                            <div className='SectionTitle_text' Style='color:#000000; border-bottom-color:#000000'>SKILLS</div>
-                            <div className='SectionTitle_link'>
-                                <img className='SectionTitle_link_img' src="/images/black-link.png" alt=''/>
-                            </div>
-                        </div> */}
+                    <div className='Skills_content fade-up' ref={listRef}>
                         <div className='Skills_tech_stacks_container'>
                             <div className='Skills_tech_stacks'>
                                 <div className='Skills_title'>Frontend</div>
@@ -38,15 +35,10 @@ const Skills = () => {
                                 <div className='Skills_title'>Version Control</div>
                                 <img className='Skills_img' src='images/version-controlimg.png' alt=''/>
                             </div>
-
                             <div className='Skills_tech_stacks'>
                                 <div className='Skills_title'>ETC</div>
                                 <img className='Skills_img' src='images/etc.png' alt=''/>
                             </div>
-                            {/* <div className='Skills_tech_stacks'>
-                                <div className='Skills_title'>Certificate</div>
-                                <img className='Skills_img' src='images/certificateimg.png' alt=''/>
-                            </div> */}
                         </div>
                     </div>
                 </article>

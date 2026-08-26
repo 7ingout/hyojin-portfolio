@@ -2,20 +2,24 @@ import React from 'react';
 import Header from './Header';
 import './css/Career.css'
 import Footer from './Footer';
+import useFadeIn from '../hooks/useFadeIn';
 
 const Career = () => {
+    const firstRef = useFadeIn();
+    const secondRef = useFadeIn();
+
     function go_up() {
         window.scrollTo(0,0);
     }
     return (
         <div>
             <Header />
-            <div className='Career'>
-                <h2>CAREER</h2> 
+            <div className='Career container-wide'>
+                <h2>CAREER</h2>
                 <article className='Career_Career'>
                     <div className='Career_content'>
                         <div className='Career_companies'>
-                            <div className='Career_company'>
+                            <div className='Career_company fade-up' ref={firstRef}>
                                 <div className='Career_logo_container'>
                                     <div className='Career_logo_wrapper'>
                                         <img className='Career_logo_img' src='images/kprc.png' alt=''/>
@@ -91,7 +95,7 @@ const Career = () => {
 </ul>
                                     </div>
                             </div>
-                            <div className='Career_company secondCompany'>
+                            <div className='Career_company secondCompany fade-up' ref={secondRef}>
                                 <div className='Career_logo_container'>
                                     <div className='Career_logo_wrapper'>
                                         <img className='Career_logo_img' src='images/greenlogo.png' alt=''/>

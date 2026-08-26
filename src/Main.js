@@ -1,21 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import './components/css/Main.css';
 
 const Main = () => {
-    const innerHeight = window.innerHeight;
-    const goDown = () => window.scrollTo({top: innerHeight, left:0, behavior:'smooth'});
     return (
-        <div className='Main'>
-            <div className='bg'></div>
-            <div className='inner'>
-                <div>안녕하세요, Web 개발자 <span>김효진입니다.</span></div>
-                <div>본 Portfolio는 React로 제작하였습니다.</div>
-            </div>
-            <div className='more' onClick={goDown}>
-                <Link to = '/About' className='moreLink'> 
-                    클릭하여 더 알아보기
-                </Link>
-            </div>
+        <div>
+            <Header />
+            <section className='Hero'>
+                <div className='Hero_inner container-wide'>
+                    <p className='section-label'>Web Developer</p>
+                    <h1 className='display-heading Hero_name'>Hyojin Kim</h1>
+                    <div className='Hero_intro'>
+                        <p>안녕하세요, Web 개발자 <span className='Hero_accent'>김효진입니다.</span></p>
+                        <p>본 Portfolio는 React로 제작하였습니다.</p>
+                    </div>
+                    <nav className='Hero_links'>
+                        <Link to='/About'>ABOUT ME</Link>
+                        <Link to='/Project'>PROJECTS</Link>
+                        <a href='https://github.com/7ingout' target='_blank' rel='noreferrer'>GitHub</a>
+                    </nav>
+                </div>
+            </section>
+            <Footer />
         </div>
     );
 };
