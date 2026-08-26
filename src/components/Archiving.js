@@ -2,22 +2,19 @@ import React from 'react';
 import Header from './Header';
 import './css/Archiving.css'
 import Footer from './Footer';
+import useFadeIn from '../hooks/useFadeIn';
 
 const Archiving = () => {
+    const listRef = useFadeIn();
+
     return (
         <div>
             <Header />
-            <div className='Archiving'>
-                <h2>ARCHIVING</h2> 
+            <div className='Archiving container-wide'>
+                <h2>ARCHIVING</h2>
                 <article className='Archiving_Archiving'>
                     <div className='Archiving_content'>
-                        {/* <div className='SectionTitle'>
-                            <div className='SectionTitle_text' Style="color:#ffffff;border-bottom-color:#6c757d">ARCHIVING</div>
-                            <div className='SectionTitle_link'>
-                                <img className='SectionTitle_link_img' src="/images/white-link.png" alt=''/>
-                            </div>
-                        </div> */}
-                        <div className='Archiving_container'>
+                        <div className='Archiving_container fade-up' ref={listRef}>
                             <a href='https://github.com/7ingout' target='_blank' rel='noreferrer'>
                             <div className='Archiving_git-hub'>
                                 <div className='Archiving_img_wrapper'>
