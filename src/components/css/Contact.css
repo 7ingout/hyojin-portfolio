@@ -1,0 +1,43 @@
+.contact {
+    border-top: 1px solid var(--hair);
+    text-align: center;
+    padding: 110px 0 90px;
+}
+.contact h2 {
+    font-family: var(--en);
+    font-size: var(--text-h2);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    background: linear-gradient(120deg, #fff, var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 0.1em;
+}
+.links {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 36px;
+}
+.link-card {
+    border: 1px solid var(--hair);
+    border-radius: 14px;
+    padding: 18px 30px;
+    color: var(--text);
+    font-family: var(--en);
+    transition: 0.25s;
+    display: inline-block;
+}
+.link-card:hover {
+    border-color: var(--accent);
+    background: rgba(124, 92, 255, 0.07);
+    transform: translateY(-3px);
+}
+.link-card small {
+    display: block;
+    color: var(--muted);
+    font-size: 0.75rem;
+    margin-top: 2px;
+}

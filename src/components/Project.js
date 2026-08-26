@@ -1,30 +1,27 @@
 import React from 'react';
 import './css/Project.css'
-import Header from './Header';
+import Nav from './Nav';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper";
-import Footer from './Footer';
+import useFadeIn from '../hooks/useFadeIn';
 
 const Project = () => {
+     const contentRef = useFadeIn({ threshold: 0.05 });
+
      function go_up() {
          window.scrollTo(0,0);
     }
-    // const red = {
-    //     color: "red",
-    //     fontSize:"12px",
-    //     fontWeight:"bold"
-    // }
     return (
         <div>
-            <Header />
-            <div className='Project_box'>
-                <h2>PROJECTS</h2> 
-                <div>한국물가협회 LOCAL CONTENTS 프로젝트 제외, 모든 디자인은 제가 맡아 진행하였습니다.</div>
+            <Nav variant='minimal' />
+            <div className='Project_box wrap'>
+                <h2 className='title'>PROJECTS</h2>
+                <div className='Project_note'>한국물가협회 LOCAL CONTENTS 프로젝트 제외, 모든 디자인은 제가 맡아 진행하였습니다.</div>
                 <article className='Profects_Projects'>
-                    <div className='Projects_content'>
+                    <div className='Projects_content reveal in' ref={contentRef}>
 
                         {/* 1. 통합 ERP 프로젝트 */}
 <div className='Project'>
@@ -33,7 +30,7 @@ const Project = () => {
     <div className='Projects_info'>
         <div className='Projects_img'>
             {/* 사진이 없는 경우 레이아웃 유지를 위한 플레이스홀더 */}
-            <div className='No_image_placeholder' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%', backgroundColor: '#f4f4f4', color: '#888', fontSize: '14px', borderRadius: '4px' }}>
+            <div className='No_image_placeholder'>
                 사내 보안 시스템 (No Image)
             </div>
         </div>
@@ -48,7 +45,7 @@ const Project = () => {
             <div className='Projects_description'>
                 <div className='Projects_label'>URL</div>
                 <div className='Projects_value'>
-                    <div className='value_url' style={{ color: '#aaa' }}>사내 ERP 시스템으로 외부 접근 제한</div>
+                    <div className='value_url value_url-disabled'>사내 ERP 시스템으로 외부 접근 제한</div>
                 </div>
             </div>
             <div className='Projects_description'>
@@ -65,7 +62,7 @@ const Project = () => {
     <div className='Projects_period'>2025.01 - 진행중 (사내 프로젝트)</div>
     <div className='Projects_info'>
         <div className='Projects_img'>
-            <div className='No_image_placeholder' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%', backgroundColor: '#f4f4f4', color: '#888', fontSize: '14px', borderRadius: '4px' }}>
+            <div className='No_image_placeholder'>
                 사내 보안 시스템 (No Image)
             </div>
         </div>
@@ -83,7 +80,7 @@ const Project = () => {
             <div className='Projects_description'>
                 <div className='Projects_label'>URL</div>
                 <div className='Projects_value'>
-                    <div className='value_url' style={{ color: '#aaa' }}>사내 ERP 시스템으로 외부 접근 제한</div>
+                    <div className='value_url value_url-disabled'>사내 ERP 시스템으로 외부 접근 제한</div>
                 </div>
             </div>
             <div className='Projects_description'>
@@ -100,7 +97,7 @@ const Project = () => {
     <div className='Projects_period'>2025.01 - 진행중 (사내 프로젝트)</div>
     <div className='Projects_info'>
         <div className='Projects_img'>
-            <div className='No_image_placeholder' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%', backgroundColor: '#f4f4f4', color: '#888', fontSize: '14px', borderRadius: '4px' }}>
+            <div className='No_image_placeholder'>
                 사내 보안 시스템 (No Image)
             </div>
         </div>
@@ -117,7 +114,7 @@ const Project = () => {
             <div className='Projects_description'>
                 <div className='Projects_label'>URL</div>
                 <div className='Projects_value'>
-                    <div className='value_url' style={{ color: '#aaa' }}>사내 ERP 시스템으로 외부 접근 제한</div>
+                    <div className='value_url value_url-disabled'>사내 ERP 시스템으로 외부 접근 제한</div>
                 </div>
             </div>
             <div className='Projects_description'>
@@ -792,8 +789,7 @@ const Project = () => {
                         </div>
                 </article>
             </div>
-            <div id="Arrimg" onClick={go_up}><img src='/images/arrow.png' alt="arrow_pic" /></div> 
-            <Footer />
+            <div id="Arrimg" onClick={go_up}><img src='/images/arrow.png' alt="arrow_pic" /></div>
         </div>
     );
 };

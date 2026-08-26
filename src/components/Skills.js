@@ -1,58 +1,71 @@
 import React from 'react';
-import Header from './Header';
-import './css/Skills.css'
-import Footer from './Footer';
+import './css/Skills.css';
+import useFadeIn from '../hooks/useFadeIn';
 
 const Skills = () => {
-    return (
-        <div> 
-            <Header />
-            <div className='Skill'>
-                <h2>SKILLS</h2>
-                <article className='Skills_Skills'>
-                    <div className='Skills_content'>
-                        {/* <div className='SectionTitle'>
-                            <div className='SectionTitle_text' Style='color:#000000; border-bottom-color:#000000'>SKILLS</div>
-                            <div className='SectionTitle_link'>
-                                <img className='SectionTitle_link_img' src="/images/black-link.png" alt=''/>
-                            </div>
-                        </div> */}
-                        <div className='Skills_tech_stacks_container'>
-                            <div className='Skills_tech_stacks'>
-                                <div className='Skills_title'>Frontend</div>
-                                <img className='Skills_img' src='images/frontendimg.png' alt=''/>
-                            </div>
-                            <div className='Skills_tech_stacks'>
-                                <div className='Skills_title'>Backend</div>
-                                <img className='Skills_img' src='images/backendimg.png' alt=''/>
-                            </div>
-                            <div className='Skills_tech_stacks'>
-                                <div className='Skills_title'>Database</div>
-                                <img className='Skills_img' src='images/database.png' alt=''/>
-                            </div>
-                            <div className='Skills_tech_stacks'>
-                                <div className='Skills_title'>Deployment</div>
-                                <img className='Skills_img' src='images/deploymentimg.png' alt=''/>
-                            </div>
-                            <div className='Skills_tech_stacks'>
-                                <div className='Skills_title'>Version Control</div>
-                                <img className='Skills_img' src='images/version-controlimg.png' alt=''/>
-                            </div>
+    const eyebrowRef = useFadeIn();
+    const titleRef = useFadeIn({ delay: 60 });
+    const leadRef = useFadeIn({ delay: 120 });
+    const rowsRef = useFadeIn({ delay: 180 });
 
-                            <div className='Skills_tech_stacks'>
-                                <div className='Skills_title'>ETC</div>
-                                <img className='Skills_img' src='images/etc.png' alt=''/>
-                            </div>
-                            {/* <div className='Skills_tech_stacks'>
-                                <div className='Skills_title'>Certificate</div>
-                                <img className='Skills_img' src='images/certificateimg.png' alt=''/>
-                            </div> */}
-                        </div>
+    return (
+        <section id='skills'>
+            <div className='eyebrow reveal' ref={eyebrowRef}>Skills</div>
+            <h2 className='title reveal' ref={titleRef}>기술 스택</h2>
+            <p className='lead reveal' ref={leadRef}>프론트부터 백엔드·DB·데이터·AI까지, 실무에서 직접 다뤄온 도구들.</p>
+            <div className='reveal' ref={rowsRef}>
+                <div className='skill-row'>
+                    <div className='cat'>Frontend</div>
+                    <div className='pills'>
+                        <span className='pill'>HTML5</span>
+                        <span className='pill'>CSS3</span>
+                        <span className='pill'>JavaScript</span>
+                        <span className='pill'>React</span>
+                        <span className='pill'>JSP</span>
+                        <span className='pill'>반응형 웹</span>
+                        <span className='pill'>UI/UX</span>
                     </div>
-                </article>
+                </div>
+                <div className='skill-row'>
+                    <div className='cat'>Backend</div>
+                    <div className='pills'>
+                        <span className='pill'>Java</span>
+                        <span className='pill'>Node.js</span>
+                        <span className='pill'>MyBatis</span>
+                        <span className='pill'>REST API</span>
+                        <span className='pill'>서버 개발</span>
+                    </div>
+                </div>
+                <div className='skill-row'>
+                    <div className='cat'>Database</div>
+                    <div className='pills'>
+                        <span className='pill'>Oracle</span>
+                        <span className='pill'>MySQL</span>
+                        <span className='pill'>SQL</span>
+                    </div>
+                </div>
+                <div className='skill-row'>
+                    <div className='cat'>Data · AI</div>
+                    <div className='pills'>
+                        <span className='pill'>Python</span>
+                        <span className='pill'>생성형 AI</span>
+                        <span className='pill'>Ollama</span>
+                        <span className='pill'>Google Analytics</span>
+                        <span className='pill'>Looker Studio</span>
+                    </div>
+                </div>
+                <div className='skill-row'>
+                    <div className='cat'>Domain · ETC</div>
+                    <div className='pills'>
+                        <span className='pill'>ERP</span>
+                        <span className='pill'>서비스 기획</span>
+                        <span className='pill'>Git</span>
+                        <span className='pill'>프로토타이핑</span>
+                        <span className='pill'>문서 작성</span>
+                    </div>
+                </div>
             </div>
-            <Footer />
-        </div>
+        </section>
     );
 };
 

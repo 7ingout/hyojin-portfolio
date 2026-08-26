@@ -1,0 +1,189 @@
+/*
+  Design tokens — dark, gradient-accented, ported 1:1 from mockup.html.
+  Fonts are loaded via <link> tags in public/index.html
+  (Pretendard for KR body copy, Space Grotesk for EN/display type).
+*/
+
+:root {
+  /* Color */
+  --bg: #0B0C10;
+  --surface: #14161C;
+  --surface-2: #1B1E26;
+  --text: #ECEDF1;
+  --muted: #9297A3;
+  --accent: #7C5CFF;
+  --accent-2: #4DA3FF;
+  --hair: rgba(255, 255, 255, 0.08);
+
+  /* Font families */
+  --kr: 'Pretendard', 'Noto Sans KR', sans-serif;
+  --en: 'Space Grotesk', sans-serif;
+
+  /* Fluid type scale */
+  --text-display: clamp(3.2rem, 9vw, 7rem);
+  --text-h1: clamp(2rem, 4.5vw, 3rem);
+  --text-h2: clamp(2.2rem, 6vw, 4rem);
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-label: 0.78rem;
+
+  /* Spacing scale (8px base) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 96px;
+  --space-8: 128px;
+
+  /* Layout */
+  --container-wide: 1080px;
+  --gutter: 32px;
+  --section-pad: 110px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.2, 0.7, 0.3, 1);
+  --duration-base: 320ms;
+  --duration-reveal: 700ms;
+
+  color-scheme: dark;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--kr);
+  font-size: var(--text-body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Ambient glow, matches mockup's body::before */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(600px 400px at 85% 8%, rgba(124, 92, 255, 0.18), transparent 70%),
+    radial-gradient(500px 500px at 5% 90%, rgba(77, 163, 255, 0.14), transparent 70%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img, svg {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+/* Section label — small caps with tracking, EN font, accent color */
+.eyebrow {
+  display: inline-block;
+  font-family: var(--en);
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.sub-eyebrow {
+  font-family: var(--en);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 56px 0 22px;
+}
+
+h2.title {
+  font-family: var(--en);
+  font-weight: 600;
+  font-size: var(--text-h1);
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.lead {
+  color: var(--muted);
+  margin-bottom: 52px;
+  max-width: 600px;
+}
+
+/* Layout containers */
+.wrap,
+.container-wide {
+  max-width: var(--container-wide);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  padding: var(--section-pad) 0;
+  position: relative;
+  z-index: 1;
+}
+
+.hairline {
+  border: none;
+  border-top: 1px solid var(--hair);
+}
+
+/* Scroll reveal utility, paired with the useFadeIn hook */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity var(--duration-reveal) var(--ease-out),
+              transform var(--duration-reveal) var(--ease-out);
+}
+
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Accessible focus ring */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}

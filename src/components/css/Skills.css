@@ -1,58 +1,41 @@
-@font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
+.skill-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 24px;
+    padding: 26px 0;
+    border-top: 1px solid var(--hair);
+    align-items: center;
 }
-.Skill {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    font-family: Pretendard-regular;
-    height: 680px;
+.skill-row .cat {
+    font-family: var(--en);
+    font-weight: 500;
+    font-size: 1.1rem;
 }
-.Skill h2 {
-    text-align: center;
-    padding: 60px;
-    text-decoration: underline;
-}
-.Skills_Skills {
-    /* background-color: #f9c51d; */
-    background-color: #B5C0D0;
-    border-radius: 25px;
-  }
-  .Skills_content {
-    width: 100%;
-    max-width: 1200px;
-    padding: 60px;
-    margin: 0 auto;
-    height: 500px;
-  }
-  .Skills_tech_stacks_container {
+.pills {
     display: flex;
-    justify-content: center;
-  }
-  .Skills_tech_stacks {
-    box-sizing: border-box;
-    flex-shrink: 0;
-    width: 220px;
-    padding: 30px;
-    margin: 0 20px;
-    border-radius: 1rem;
-    background-color: #fff;
-    box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2);
-  }
-  .Skills_title {
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid #ccc;
-    font-weight: 700;
-    font-size: 22px;
-    color: #f4623a;
-    text-align: center;
-  }
-  .Skills_img {
-    display: block;
-    width: 100%;
-  }
-  
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.pill {
+    font-size: 0.85rem;
+    color: var(--muted);
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--hair);
+    background: var(--surface);
+    transition: 0.22s;
+    font-family: var(--en);
+}
+.pill:hover {
+    color: var(--text);
+    border-color: var(--accent);
+    box-shadow: 0 0 16px rgba(124, 92, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 720px) {
+    .skill-row {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+}
