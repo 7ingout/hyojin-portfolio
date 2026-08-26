@@ -1,30 +1,31 @@
 /*
-  Design system tokens — minimal / typographic / editorial.
+  Design tokens — dark, gradient-accented, ported 1:1 from mockup.html.
   Fonts are loaded via <link> tags in public/index.html
-  (Pretendard for KR/UI body copy, Fraunces for large display type).
+  (Pretendard for KR body copy, Space Grotesk for EN/display type).
 */
 
 :root {
   /* Color */
-  --bg: #FAF9F6;
-  --surface: #FFFFFF;
-  --text: #1A1A1A;
-  --text-muted: #6B6B6B;
-  --hairline: rgba(0, 0, 0, 0.10);
-  --accent: #B54A2E;
+  --bg: #0B0C10;
+  --surface: #14161C;
+  --surface-2: #1B1E26;
+  --text: #ECEDF1;
+  --muted: #9297A3;
+  --accent: #7C5CFF;
+  --accent-2: #4DA3FF;
+  --hair: rgba(255, 255, 255, 0.08);
 
   /* Font families */
-  --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-display: 'Fraunces', 'Pretendard', serif;
+  --kr: 'Pretendard', 'Noto Sans KR', sans-serif;
+  --en: 'Space Grotesk', sans-serif;
 
   /* Fluid type scale */
-  --text-display: clamp(2.5rem, 8vw, 6rem);
-  --text-h1: clamp(2rem, 5vw, 3.5rem);
-  --text-h2: clamp(1.5rem, 3.5vw, 2.25rem);
-  --text-h3: clamp(1.15rem, 2vw, 1.5rem);
+  --text-display: clamp(3.2rem, 9vw, 7rem);
+  --text-h1: clamp(2rem, 4.5vw, 3rem);
+  --text-h2: clamp(2.2rem, 6vw, 4rem);
   --text-body: 1rem;
   --text-small: 0.875rem;
-  --text-label: 0.75rem;
+  --text-label: 0.78rem;
 
   /* Spacing scale (8px base) */
   --space-1: 8px;
@@ -37,15 +38,16 @@
   --space-8: 128px;
 
   /* Layout */
-  --container-narrow: 760px;
-  --container-wide: 1100px;
-  --gutter: clamp(24px, 6vw, 80px);
+  --container-wide: 1080px;
+  --gutter: 32px;
+  --section-pad: 110px;
 
   /* Motion */
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out: cubic-bezier(0.2, 0.7, 0.3, 1);
   --duration-base: 320ms;
+  --duration-reveal: 700ms;
 
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 /* Reset */
@@ -62,11 +64,24 @@ html {
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: var(--font-sans);
+  font-family: var(--kr);
   font-size: var(--text-body);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Ambient glow, matches mockup's body::before */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(600px 400px at 85% 8%, rgba(124, 92, 255, 0.18), transparent 70%),
+    radial-gradient(500px 500px at 5% 90%, rgba(77, 163, 255, 0.14), transparent 70%);
 }
 
 a {
@@ -83,54 +98,73 @@ img, svg {
   max-width: 100%;
 }
 
-/* Section label — small caps with tracking */
-.section-label {
+/* Section label — small caps with tracking, EN font, accent color */
+.eyebrow {
   display: inline-block;
-  font-family: var(--font-sans);
+  font-family: var(--en);
   font-size: var(--text-label);
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  font-weight: 500;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--accent);
+  margin-bottom: 20px;
 }
 
-/* Editorial display heading */
-.display-heading {
-  font-family: var(--font-display);
-  font-weight: 500;
-  line-height: 1.05;
-  letter-spacing: -0.01em;
+.sub-eyebrow {
+  font-family: var(--en);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 56px 0 22px;
+}
+
+h2.title {
+  font-family: var(--en);
+  font-weight: 600;
+  font-size: var(--text-h1);
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.lead {
+  color: var(--muted);
+  margin-bottom: 52px;
+  max-width: 600px;
 }
 
 /* Layout containers */
-.container-narrow {
-  max-width: var(--container-narrow);
-  margin-inline: auto;
-  padding-inline: var(--gutter);
-}
-
+.wrap,
 .container-wide {
   max-width: var(--container-wide);
   margin-inline: auto;
   padding-inline: var(--gutter);
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  padding: var(--section-pad) 0;
+  position: relative;
+  z-index: 1;
 }
 
 .hairline {
   border: none;
-  border-top: 1px solid var(--hairline);
+  border-top: 1px solid var(--hair);
 }
 
-/* Scroll fade-up utility, paired with the useFadeIn hook */
-.fade-up {
+/* Scroll reveal utility, paired with the useFadeIn hook */
+.reveal {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity var(--duration-base) var(--ease-out),
-              transform var(--duration-base) var(--ease-out);
+  transform: translateY(28px);
+  transition: opacity var(--duration-reveal) var(--ease-out),
+              transform var(--duration-reveal) var(--ease-out);
 }
 
-.fade-up.is-visible {
+.reveal.in {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -138,7 +172,7 @@ img, svg {
     scroll-behavior: auto;
   }
 
-  .fade-up {
+  .reveal {
     opacity: 1;
     transform: none;
     transition: none;

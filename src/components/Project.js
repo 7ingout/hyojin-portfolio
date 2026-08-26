@@ -1,12 +1,11 @@
 import React from 'react';
 import './css/Project.css'
-import Header from './Header';
+import Nav from './Nav';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper";
-import Footer from './Footer';
 import useFadeIn from '../hooks/useFadeIn';
 
 const Project = () => {
@@ -17,7 +16,7 @@ const Project = () => {
     }
     return (
         <div>
-            <Header />
+            <Nav variant='minimal' />
             <div className='Project_box container-wide'>
                 <h2>PROJECTS</h2>
                 <div className='Project_note'>한국물가협회 LOCAL CONTENTS 프로젝트 제외, 모든 디자인은 제가 맡아 진행하였습니다.</div>
@@ -790,8 +789,7 @@ const Project = () => {
                         </div>
                 </article>
             </div>
-            <div id="Arrimg" onClick={go_up}><img src='/images/arrow.png' alt="arrow_pic" /></div> 
-            <Footer />
+            <div id="Arrimg" onClick={go_up}><img src='/images/arrow.png' alt="arrow_pic" /></div>
         </div>
     );
 };
