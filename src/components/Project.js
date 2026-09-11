@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './css/Project.css'
 import Nav from './Nav';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,6 +11,18 @@ import useFadeIn from '../hooks/useFadeIn';
 
 const Project = () => {
      const contentRef = useFadeIn({ threshold: 0.05 });
+     const location = useLocation();
+
+     useEffect(() => {
+        if (location.hash) {
+            const target = document.querySelector(location.hash);
+            if (target) {
+                target.scrollIntoView({ block: 'start' });
+                return;
+            }
+        }
+        window.scrollTo(0, 0);
+     }, [location]);
 
      function go_up() {
          window.scrollTo(0,0);
@@ -24,14 +37,14 @@ const Project = () => {
                     <div className='Projects_content reveal in' ref={contentRef}>
 
                         {/* 1. 통합 ERP 프로젝트 */}
-<div className='Project'>
+<div className='Project' id='erp-mis'>
     <div className='Projects_title'>사내 MIS 고도화 및 차세대 통합 ERP 구축</div>
     <div className='Projects_period'>2025.01 - 진행중 (사내 프로젝트)</div>
     <div className='Projects_info'>
         <div className='Projects_img'>
             {/* 사진이 없는 경우 레이아웃 유지를 위한 플레이스홀더 */}
             <div className='No_image_placeholder'>
-                사내 보안 시스템 (No Image)
+                사내 시스템 (비공개)
             </div>
         </div>
         <div className='Projects_descriptions'>
@@ -57,13 +70,13 @@ const Project = () => {
 </div>
 
 {/* 2. 물가 ERP 프로젝트 */}
-<div className='Project'>
+<div className='Project' id='erp-price'>
     <div className='Projects_title'>물가자료 ERP 시스템 및 감사 대응 기능 구축</div>
     <div className='Projects_period'>2025.01 - 진행중 (사내 프로젝트)</div>
     <div className='Projects_info'>
         <div className='Projects_img'>
             <div className='No_image_placeholder'>
-                사내 보안 시스템 (No Image)
+                사내 시스템 (비공개)
             </div>
         </div>
         <div className='Projects_descriptions'>
@@ -92,13 +105,13 @@ const Project = () => {
 </div>
 
 {/* 3. 생활물가 ERP 프로젝트 */}
-<div className='Project'>
+<div className='Project' id='erp-living'>
     <div className='Projects_title'>생활물가 기획조사 특화 ERP 시스템 개발</div>
     <div className='Projects_period'>2025.01 - 진행중 (사내 프로젝트)</div>
     <div className='Projects_info'>
         <div className='Projects_img'>
             <div className='No_image_placeholder'>
-                사내 보안 시스템 (No Image)
+                사내 시스템 (비공개)
             </div>
         </div>
         <div className='Projects_descriptions'>
@@ -125,7 +138,7 @@ const Project = () => {
     </div>
 </div>
                     
-                    <div className='Project'>
+                    <div className='Project' id='food-service'>
                             <div className='Projects_title'>한국물가협회 단체급식 식재료 시장조사</div>
                             <div className='Projects_period'>2024.08.02 - 2024.08.27 (개인 프로젝트)</div>
                             <div className='Projects_info'>
@@ -375,7 +388,7 @@ const Project = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='Project'>
+                            <div className='Project' id='walking-on-a-planet'>
                                 <div className='Projects_title'>Walking On a Planet</div>
                                 <div className='Projects_period'>2022.07.25 - 2022.08.12 (개인 프로젝트)</div>
                                 <div className='Projects_info'>
@@ -484,7 +497,7 @@ const Project = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='Project'>
+                            <div className='Project' id='wannasee'>
                                 <div className='Projects_title'>WANNASEE</div>
                                 <div className='Projects_period'>2022.07.04 - 2022.07.15 (2인 팀프로젝트)</div>
                                 <div className='Projects_info'>
@@ -641,7 +654,7 @@ const Project = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='Project'>
+                            <div className='Project' id='jooda'>
                                 <div className='Projects_title'>JOODA</div>
                                 <div className='Projects_period'>2022.06.07 - 2022.06.14 (2인 팀프로젝트)</div>
                                 <div className='Projects_info'>
@@ -721,7 +734,7 @@ const Project = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='Project'>
+                            <div className='Project' id='baseball-game'>
                                 <div className='Projects_title'>Baseball Game</div>
                                 <div className='Projects_period'>2022.05.16 - 2022.05.20 (3인 팀프로젝트)</div>
                                 <div className='Projects_info'>

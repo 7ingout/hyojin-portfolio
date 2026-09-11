@@ -13,7 +13,7 @@ const Hero = () => {
             <div className='eyebrow reveal' ref={eyebrowRef}>All-round Developer</div>
             <h1 className='reveal' ref={titleRef}>Hyojin Kim</h1>
             <p className='sub reveal' ref={subRef}>
-                <b>기획부터 개발·운영까지 직접 해내는 AI 활용 올라운드 개발자.</b><br />
+                <b>기획부터 개발·운영까지 직접 해내는 AI 활용 올라운드 실무자.</b><br />
                 4년 6개월간 ERP 구축·운영을 중심으로 웹 개발, 데이터 자동화, 인프라 운영까지 폭넓게 경험했습니다.
             </p>
             <div className='cta reveal' ref={ctaRef}>
