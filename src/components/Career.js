@@ -17,8 +17,8 @@ const Career = () => {
                 <div className='tl-item'>
                     <div className='when'>2022.11 — 재직중</div>
                     <h3>(사)한국물가협회 · 웹개발 대리</h3>
-                    <div className='role'>통합 ERP 설계·구축 · 웹 개발·운영 · Python 자동화 · 인프라/보안</div>
-                    <p className='desc'>업무 흐름 분석 기반 차세대 통합 ERP 구조 설계·구축, 대표 홈페이지·신규 서비스 개발, 데이터 수집 자동화 및 서버 점검 자동화, Oracle 쿼리 최적화·비정상 접근 로그 분석까지 폭넓게 수행.</p>
+                    <div className='role'>사내 ERP 설계·구축 · 웹 개발·운영 · Python 자동화 · 인프라/보안</div>
+                    <p className='desc'>업무 흐름 분석 기반 차세대 ERP 구조 설계·구축, 대표 홈페이지·신규 서비스 개발, 데이터 수집 자동화 및 서버 점검 자동화, Oracle 쿼리 최적화·비정상 접근 로그 분석까지 폭넓게 수행.</p>
                 </div>
                 <div className='tl-item'>
                     <div className='when'>2021.05 — 2021.12</div>

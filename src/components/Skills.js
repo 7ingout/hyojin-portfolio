@@ -48,7 +48,8 @@ const Skills = () => {
                     <div className='cat'>Data · AI</div>
                     <div className='pills'>
                         <span className='pill'>Python</span>
-                        <span className='pill'>생성형 AI</span>
+                        <span className='pill'>Claude</span>
+                        <span className='pill'>Cursor AI</span>
                         <span className='pill'>Ollama</span>
                         <span className='pill'>Google Analytics</span>
                         <span className='pill'>Looker Studio</span>
